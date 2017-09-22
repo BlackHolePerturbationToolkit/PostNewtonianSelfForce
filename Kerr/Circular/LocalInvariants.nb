@@ -1,0 +1,1372 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     45431,       1364]
+NotebookOptionsPosition[     44446,       1333]
+NotebookOutlinePosition[     44800,       1349]
+CellTagsIndexPosition[     44757,       1346]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Post-Newtonian expansions for extreme mass ratio binaries", "Title",
+ CellChangeTimes->{{3.63519291735288*^9, 
+  3.635192948629938*^9}},ExpressionUUID->"4fc414fe-e1ea-4681-9f0a-\
+4e287686f1ec"],
+
+Cell["Chris Kavanagh, Adrian Ottewill and Barry Wardell", "Subtitle",
+ CellChangeTimes->{{3.549109868364356*^9, 3.5491098754891357`*^9}, {
+  3.6351929958858624`*^9, 
+  3.6351929982612953`*^9}},ExpressionUUID->"04164415-dc50-4222-8798-\
+b09e0cfe37fd"],
+
+Cell[TextData[{
+ "This notebook gives high-order post-Newtonian expansions of the \
+liner-in-mass-ratio corrections to gauge invariant quantites on the worldline \
+of a point mass in a circular orbit around a Kerr black hole with mass M and \
+dimensionless spin ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"q", "=", 
+    RowBox[{"a", "/", "M"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "8a903fd8-dffb-43ad-bae4-7d2e62f20653"],
+ ". We parametrize the orbit by y, where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"1", "/", "y"}], "=", 
+    SuperscriptBox[
+     RowBox[{"(", "M\[CapitalOmega]", ")"}], 
+     RowBox[{"2", "/", "3"}]]}], TraditionalForm]],ExpressionUUID->
+  "75ea1b3d-3ab7-435e-9f8b-926a7065192c"],
+ " is an invariant measure of the radius defined through the orbital \
+frequency, \[CapitalOmega]."
+}], "Text",
+ CellChangeTimes->{{3.635193008084097*^9, 3.6351930615111113`*^9}, {
+  3.635193099111977*^9, 3.635193120038684*^9}, {3.635193157123067*^9, 
+  3.6351932096820927`*^9}, {3.635193242524506*^9, 3.635193278746436*^9}, {
+  3.635193310450629*^9, 3.635193363822401*^9}, {3.6351934877055817`*^9, 
+  3.635193488112467*^9}, {3.63623854197633*^9, 3.636238543765555*^9}, {
+  3.715081618908579*^9, 3.715081649953167*^9}, {3.715081794715335*^9, 
+  3.715081826530233*^9}},ExpressionUUID->"52486258-92e4-4806-ac27-\
+d822337b3843"],
+
+Cell["\<\
+A definition of the invariants and a description of the calculation of their \
+post-Newtonian expansions is available in: \[OpenCurlyDoubleQuote]Analytical \
+high-order post-Newtonian expansions for spinning extreme mass ratio binaries\
+\[CloseCurlyDoubleQuote], Chris Kavanagh, Adrian Ottewill and Barry Wardell, \
+Phys. Rev. D 93, 124038, arXiv:1601.03394.\
+\>", "Text",
+ CellChangeTimes->{{3.635193387270811*^9, 3.635193453619944*^9}, {
+  3.635193510295335*^9, 3.635193596720387*^9}, {3.640696268836544*^9, 
+  3.640696332192897*^9}, {3.641044505018158*^9, 3.641044519856378*^9}, {
+  3.650957469143704*^9, 3.650957512782598*^9}, {3.715081426371777*^9, 
+  3.715081538154113*^9}, {3.715081681314259*^9, 
+  3.715081725991042*^9}},ExpressionUUID->"16753c2e-9316-4a9b-99f7-\
+b467b2a69c13"],
+
+Cell[CellGroupData[{
+
+Cell["\[CapitalDelta]U", "Section",
+ CellChangeTimes->{{3.6346415810875883`*^9, 3.6346415822075853`*^9}, {
+  3.634644021123769*^9, 
+  3.634644021337441*^9}},ExpressionUUID->"5efed6cc-3961-4b47-865a-\
+faad93c7df05"],
+
+Cell[TextData[{
+ "Detweiler\[CloseCurlyQuote]s redshift invariant, accurate to order ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["y", "9.5"], TraditionalForm]],ExpressionUUID->
+  "d59c63fa-7702-4fdb-b5e2-23c8773d3235"]
+}], "Text",
+ CellChangeTimes->{{3.636238584330743*^9, 3.636238606199271*^9}, {
+  3.6518148643865757`*^9, 3.651814864536305*^9}, {3.715081610345497*^9, 
+  3.7150816110722837`*^9}},ExpressionUUID->"408e0511-257c-42ed-a758-\
+7813a66d2ba9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[CapitalDelta]U", "=", 
+   RowBox[{
+    RowBox[{"-", "y"}], "-", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["y", "2"]}], "+", 
+    RowBox[{
+     FractionBox["7", "3"], " ", "q", " ", 
+     SuperscriptBox["y", 
+      RowBox[{"5", "/", "2"}]]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "5"}], "-", 
+       SuperscriptBox["q", "2"]}], ")"}], " ", 
+     SuperscriptBox["y", "3"]}], "+", 
+    RowBox[{
+     FractionBox["46", "3"], " ", "q", " ", 
+     SuperscriptBox["y", 
+      RowBox[{"7", "/", "2"}]]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["121", "3"]}], "+", 
+       FractionBox[
+        RowBox[{"41", " ", 
+         SuperscriptBox["\[Pi]", "2"]}], "32"], "-", 
+       FractionBox[
+        RowBox[{"86", " ", 
+         SuperscriptBox["q", "2"]}], "9"]}], ")"}], " ", 
+     SuperscriptBox["y", "4"]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"77", " ", "q"}], "+", 
+       SuperscriptBox["q", "3"]}], ")"}], " ", 
+     SuperscriptBox["y", 
+      RowBox[{"9", "/", "2"}]]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["974", "3"], "+", 
+          FractionBox[
+           RowBox[{"29", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "32"]}], ")"}], " ", "q"}], "+", 
+       FractionBox[
+        RowBox[{"1526", " ", 
+         SuperscriptBox["q", "3"]}], "81"]}], ")"}], " ", 
+     SuperscriptBox["y", 
+      RowBox[{"11", "/", "2"}]]}], "+", 
+    RowBox[{
+     SuperscriptBox["y", "5"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1157", "15"]}], "-", 
+       FractionBox[
+        RowBox[{"128", " ", 
+         InterpretationBox[
+          StyleBox["EulerGamma",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          EulerGamma,
+          Editable->False]}], "5"], "-", 
+       FractionBox[
+        RowBox[{"64", " ", 
+         RowBox[{"Log", "[", "y", "]"}]}], "5"], "+", 
+       FractionBox[
+        RowBox[{"677", " ", 
+         SuperscriptBox["\[Pi]", "2"]}], "512"], "-", 
+       FractionBox[
+        RowBox[{"577", " ", 
+         SuperscriptBox["q", "2"]}], "9"], "-", 
+       FractionBox[
+        RowBox[{"256", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "2", "]"}]}], "5"]}], ")"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["y", 
+      RowBox[{"13", "/", "2"}]], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"13696", " ", "\[Pi]"}], "525"]}], "+", 
+       FractionBox[
+        RowBox[{"176", " ", 
+         RowBox[{"Log", "[", "y", "]"}], " ", "q"}], "5"], "+", 
+       FractionBox[
+        RowBox[{"13625", " ", 
+         SuperscriptBox["q", "3"]}], "81"], "+", 
+       RowBox[{"q", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["348047", "150"], "+", 
+          FractionBox[
+           RowBox[{"352", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "5"], "-", 
+          FractionBox[
+           RowBox[{"6349", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "64"], "+", 
+          FractionBox[
+           RowBox[{"416", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "3"]}], ")"}]}]}], ")"}]}],
+     "+", 
+    RowBox[{
+     SuperscriptBox["y", "6"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["1606877", "3150"], "+", 
+       FractionBox[
+        RowBox[{"1912", " ", 
+         InterpretationBox[
+          StyleBox["EulerGamma",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          EulerGamma,
+          Editable->False]}], "105"], "+", 
+       FractionBox[
+        RowBox[{"956", " ", 
+         RowBox[{"Log", "[", "y", "]"}]}], "105"], "-", 
+       FractionBox[
+        RowBox[{"60343", " ", 
+         SuperscriptBox["\[Pi]", "2"]}], "768"], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox["1147", "3"]}], "+", 
+          FractionBox[
+           RowBox[{"593", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "512"]}], ")"}], " ", 
+        SuperscriptBox["q", "2"]}], "-", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["q", "4"]}], "+", 
+       FractionBox[
+        RowBox[{"7544", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "2", "]"}]}], "105"], "-", 
+       FractionBox[
+        RowBox[{"243", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "3", "]"}]}], "7"]}], ")"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["y", "7"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["17083661", "4050"], "+", 
+       FractionBox[
+        RowBox[{"102512", " ", 
+         InterpretationBox[
+          StyleBox["EulerGamma",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          EulerGamma,
+          Editable->False]}], "567"], "-", 
+       FractionBox[
+        RowBox[{"1246056911", " ", 
+         SuperscriptBox["\[Pi]", "2"]}], "1769472"], "+", 
+       FractionBox[
+        RowBox[{"2800873", " ", 
+         SuperscriptBox["\[Pi]", "4"]}], "262144"], "-", 
+       FractionBox[
+        RowBox[{"8120", " ", 
+         SuperscriptBox["q", "4"]}], "243"], "+", 
+       RowBox[{
+        RowBox[{"Log", "[", "y", "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["51256", "567"], "-", 
+          FractionBox[
+           RowBox[{"132", " ", 
+            SuperscriptBox["q", "2"]}], "5"]}], ")"}]}], "+", 
+       RowBox[{
+        SuperscriptBox["q", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox["1288408", "675"]}], "-", 
+          FractionBox[
+           RowBox[{"264", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "5"], "+", 
+          FractionBox[
+           RowBox[{"92557", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "9216"], "-", 
+          RowBox[{"104", " ", 
+           RowBox[{
+            InterpretationBox[
+             StyleBox["Log",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             Log,
+             Editable->False], "[", "2", "]"}]}]}], ")"}]}], "+", 
+       FractionBox[
+        RowBox[{"372784", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "2", "]"}]}], "2835"], "+", 
+       FractionBox[
+        RowBox[{"1215", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "3", "]"}]}], "7"]}], ")"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["y", 
+      RowBox[{"15", "/", "2"}]], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"81077", " ", "\[Pi]"}], "3675"], "+", 
+       FractionBox[
+        RowBox[{"12", " ", 
+         SuperscriptBox["q", "5"]}], "5"], "+", 
+       RowBox[{
+        RowBox[{"Log", "[", "y", "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"1052", " ", "q"}], "5"], "+", 
+          FractionBox[
+           RowBox[{"96", " ", 
+            SuperscriptBox["q", "3"]}], "5"]}], ")"}]}], "+", 
+       RowBox[{"q", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["734961481", "22050"], "+", 
+          FractionBox[
+           RowBox[{"2072", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "5"], "-", 
+          FractionBox[
+           RowBox[{"8911441", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "3072"], "+", 
+          FractionBox[
+           RowBox[{"4744", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "7"], "+", 
+          FractionBox[
+           RowBox[{"972", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "3", "]"}]}], "7"], "+", 
+          FractionBox[
+           RowBox[{"32", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "5"], "+", 
+          RowBox[{
+           FractionBox["16", "5"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}]}], ")"}]}], "+", 
+       RowBox[{
+        SuperscriptBox["q", "3"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["243611", "225"], "+", 
+          FractionBox[
+           RowBox[{"96", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "5"], "+", 
+          FractionBox[
+           RowBox[{"1319", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "384"], "+", 
+          FractionBox[
+           RowBox[{"96", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "5"], "+", 
+          FractionBox[
+           RowBox[{"96", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "5"], "+", 
+          RowBox[{
+           FractionBox["48", "5"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}]}], ")"}]}]}], ")"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["y", 
+      RowBox[{"17", "/", "2"}]], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"82561159", " ", "\[Pi]"}], "467775"], "-", 
+       FractionBox[
+        RowBox[{"5564", " ", "\[Pi]", " ", 
+         SuperscriptBox["q", "2"]}], "105"], "+", 
+       FractionBox[
+        RowBox[{"191699", " ", 
+         SuperscriptBox["q", "5"]}], "3645"], "+", 
+       RowBox[{
+        RowBox[{"Log", "[", "y", "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"147872", " ", "q"}], "1701"], "+", 
+          FractionBox[
+           RowBox[{"2224", " ", 
+            SuperscriptBox["q", "3"]}], "15"]}], ")"}]}], "+", 
+       RowBox[{"q", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["700704798839", "3572100"], "+", 
+          FractionBox[
+           RowBox[{"1097696", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "8505"], "-", 
+          FractionBox[
+           RowBox[{"27925459441", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "1327104"], "+", 
+          FractionBox[
+           RowBox[{"124925059", " ", 
+            SuperscriptBox["\[Pi]", "4"]}], "393216"], "+", 
+          FractionBox[
+           RowBox[{"4440032", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "8505"], "-", 
+          FractionBox[
+           RowBox[{"162", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "3", "]"}]}], "7"], "+", 
+          FractionBox[
+           RowBox[{"224", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "5"], "+", 
+          RowBox[{
+           FractionBox["16", "5"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "1"}], "]"}]}], "+", 
+          RowBox[{
+           FractionBox["96", "5"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}]}], ")"}]}], "+", 
+       RowBox[{
+        SuperscriptBox["q", "3"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["13856317", "1215"], "+", 
+          FractionBox[
+           RowBox[{"2792", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "15"], "-", 
+          FractionBox[
+           RowBox[{"80954347", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "165888"], "+", 
+          FractionBox[
+           RowBox[{"1272", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "5"], "+", 
+          FractionBox[
+           RowBox[{"552", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "5"], "-", 
+          RowBox[{
+           FractionBox["12", "5"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "1"}], "]"}]}], "+", 
+          RowBox[{
+           FractionBox["288", "5"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}]}], ")"}]}]}], ")"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["y", "8"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["12624956532163", "382016250"], "-", 
+       FractionBox[
+        RowBox[{"10327445038", " ", 
+         InterpretationBox[
+          StyleBox["EulerGamma",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          EulerGamma,
+          Editable->False]}], "5457375"], "+", 
+       FractionBox[
+        RowBox[{"109568", " ", 
+         SuperscriptBox[
+          InterpretationBox[
+           StyleBox["EulerGamma",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           EulerGamma,
+           Editable->False], "2"]}], "525"], "+", 
+       FractionBox[
+        RowBox[{"27392", " ", 
+         SuperscriptBox[
+          RowBox[{"Log", "[", "y", "]"}], "2"]}], "525"], "-", 
+       FractionBox[
+        RowBox[{"9041721471697", " ", 
+         SuperscriptBox["\[Pi]", "2"]}], "2477260800"], "-", 
+       FractionBox[
+        RowBox[{"23851025", " ", 
+         SuperscriptBox["\[Pi]", "4"]}], "16777216"], "+", 
+       FractionBox[
+        RowBox[{"33008", " ", "\[Pi]", " ", "q"}], "315"], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox["85420", "243"]}], "-", 
+          FractionBox[
+           RowBox[{"69", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "256"]}], ")"}], " ", 
+        SuperscriptBox["q", "4"]}], "-", 
+       FractionBox[
+        RowBox[{"16983588526", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "2", "]"}]}], "5457375"], "+", 
+       RowBox[{
+        FractionBox["438272", "525"], " ", 
+        InterpretationBox[
+         StyleBox["EulerGamma",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         EulerGamma,
+         Editable->False], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Log",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Log,
+          Editable->False], "[", "2", "]"}]}], "+", 
+       FractionBox[
+        RowBox[{"438272", " ", 
+         SuperscriptBox[
+          RowBox[{
+           InterpretationBox[
+            StyleBox["Log",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            Log,
+            Editable->False], "[", "2", "]"}], "2"]}], "525"], "+", 
+       RowBox[{
+        RowBox[{"Log", "[", "y", "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox["5163722519", "5457375"]}], "+", 
+          FractionBox[
+           RowBox[{"109568", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "525"], "-", 
+          FractionBox[
+           RowBox[{"33868", " ", 
+            SuperscriptBox["q", "2"]}], "315"], "+", 
+          FractionBox[
+           RowBox[{"219136", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "525"]}], ")"}]}], "+", 
+       RowBox[{
+        SuperscriptBox["q", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["14713942", "945"], "-", 
+          FractionBox[
+           RowBox[{"67736", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "315"], "-", 
+          FractionBox[
+           RowBox[{"710125279", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "294912"], "-", 
+          FractionBox[
+           RowBox[{"6632", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "21"], "-", 
+          FractionBox[
+           RowBox[{"729", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "3", "]"}]}], "7"]}], ")"}]}], "-", 
+       FractionBox[
+        RowBox[{"2873961", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "3", "]"}]}], "24640"], "-", 
+       FractionBox[
+        RowBox[{"1953125", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "5", "]"}]}], "19008"], "-", 
+       FractionBox[
+        RowBox[{"2048", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Zeta",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Zeta,
+           Editable->False], "[", "3", "]"}]}], "5"]}], ")"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["y", "9"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["7516468355368067", "34763478750"]}], "-", 
+       FractionBox[
+        RowBox[{"1533327047906", " ", 
+         InterpretationBox[
+          StyleBox["EulerGamma",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          EulerGamma,
+          Editable->False]}], "496621125"], "-", 
+       FractionBox[
+        RowBox[{"108064", " ", 
+         SuperscriptBox[
+          InterpretationBox[
+           StyleBox["EulerGamma",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           EulerGamma,
+           Editable->False], "2"]}], "2205"], "-", 
+       FractionBox[
+        RowBox[{"27016", " ", 
+         SuperscriptBox[
+          RowBox[{"Log", "[", "y", "]"}], "2"]}], "2205"], "-", 
+       FractionBox[
+        RowBox[{"246847155756529", " ", 
+         SuperscriptBox["\[Pi]", "2"]}], "18496880640"], "+", 
+       FractionBox[
+        RowBox[{"22759807747673", " ", 
+         SuperscriptBox["\[Pi]", "4"]}], "6442450944"], "-", 
+       FractionBox[
+        RowBox[{"14", " ", 
+         SuperscriptBox["q", "6"]}], "5"], "+", 
+       FractionBox[
+        RowBox[{"1712", " ", "\[Kappa]"}], "525"], "+", 
+       RowBox[{"q", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"24020077", " ", "\[Pi]"}], "66150"], "-", 
+          RowBox[{
+           FractionBox["3424", "525"], " ", 
+           RowBox[{"\[Psi]bar", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}], "+", 
+          FractionBox[
+           RowBox[{"64", " ", 
+            RowBox[{"\[Psi]bar", "[", 
+             RowBox[{"1", ",", "2"}], "]"}]}], 
+           RowBox[{"5", " ", "\[Kappa]"}]]}], ")"}]}], "+", 
+       RowBox[{
+        SuperscriptBox["q", "3"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox["3424", "175"]}], " ", 
+           RowBox[{"\[Psi]bar", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}], "+", 
+          FractionBox[
+           RowBox[{"192", " ", 
+            RowBox[{"\[Psi]bar", "[", 
+             RowBox[{"1", ",", "2"}], "]"}]}], 
+           RowBox[{"5", " ", "\[Kappa]"}]]}], ")"}]}], "-", 
+       FractionBox[
+        RowBox[{"1363551923554", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "2", "]"}]}], "496621125"], "-", 
+       FractionBox[
+        RowBox[{"3574208", " ", 
+         InterpretationBox[
+          StyleBox["EulerGamma",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          EulerGamma,
+          Editable->False], " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "2", "]"}]}], "3675"], "-", 
+       FractionBox[
+        RowBox[{"2143328", " ", 
+         SuperscriptBox[
+          RowBox[{
+           InterpretationBox[
+            StyleBox["Log",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            Log,
+            Editable->False], "[", "2", "]"}], "2"]}], "1575"], "-", 
+       FractionBox[
+        RowBox[{"2201898578589", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "3", "]"}]}], "392392000"], "+", 
+       RowBox[{
+        FractionBox["37908", "49"], " ", 
+        InterpretationBox[
+         StyleBox["EulerGamma",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         EulerGamma,
+         Editable->False], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Log",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Log,
+          Editable->False], "[", "3", "]"}]}], "+", 
+       RowBox[{
+        FractionBox["37908", "49"], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Log",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Log,
+          Editable->False], "[", "2", "]"}], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Log",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Log,
+          Editable->False], "[", "3", "]"}]}], "+", 
+       FractionBox[
+        RowBox[{"18954", " ", 
+         SuperscriptBox[
+          RowBox[{
+           InterpretationBox[
+            StyleBox["Log",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            Log,
+            Editable->False], "[", "3", "]"}], "2"]}], "49"], "+", 
+       RowBox[{
+        RowBox[{"Log", "[", "y", "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox["769841899153", "496621125"]}], "-", 
+          FractionBox[
+           RowBox[{"108064", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "2205"], "-", 
+          FractionBox[
+           RowBox[{"383336", " ", 
+            SuperscriptBox["q", "2"]}], "567"], "-", 
+          FractionBox[
+           RowBox[{"36", " ", 
+            SuperscriptBox["q", "4"]}], "5"], "-", 
+          FractionBox[
+           RowBox[{"1787104", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "3675"], "+", 
+          FractionBox[
+           RowBox[{"18954", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "3", "]"}]}], "49"]}], ")"}]}], "+", 
+       FractionBox[
+        RowBox[{"798828125", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "5", "]"}]}], "741312"], "-", 
+       FractionBox[
+        RowBox[{"64", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "\[Kappa]", "]"}]}], "5"], "+", 
+       RowBox[{
+        SuperscriptBox["q", "4"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox["650593", "225"]}], "-", 
+          FractionBox[
+           RowBox[{"104", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "5"], "+", 
+          FractionBox[
+           RowBox[{"818819", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "98304"], "-", 
+          FractionBox[
+           RowBox[{"232", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "5"], "+", 
+          FractionBox[
+           RowBox[{"32", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "5"], "+", 
+          RowBox[{
+           FractionBox["16", "5"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "1"}], "]"}]}]}], ")"}]}], "+", 
+       RowBox[{
+        SuperscriptBox["q", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["53568869587", "99225"], "-", 
+          FractionBox[
+           RowBox[{"682000", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "567"], "-", 
+          FractionBox[
+           RowBox[{"411304830035", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "7077888"], "-", 
+          FractionBox[
+           RowBox[{"417436343", " ", 
+            SuperscriptBox["\[Pi]", "4"]}], "16777216"], "+", 
+          FractionBox[
+           RowBox[{"1712", " ", "\[Kappa]"}], "175"], "-", 
+          FractionBox[
+           RowBox[{"7102544", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "2835"], "+", 
+          FractionBox[
+           RowBox[{"486", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "3", "]"}]}], "7"], "-", 
+          FractionBox[
+           RowBox[{"448", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "3"], "-", 
+          RowBox[{
+           FractionBox["64", "15"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "1"}], "]"}]}], "-", 
+          RowBox[{
+           FractionBox["352", "5"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}]}], ")"}]}], "-", 
+       RowBox[{
+        FractionBox["32", "5"], " ", 
+        RowBox[{"\[Psi]", "[", 
+         RowBox[{"0", ",", "2"}], "]"}]}], "-", 
+       FractionBox[
+        RowBox[{"41408", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Zeta",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Zeta,
+           Editable->False], "[", "3", "]"}]}], "105"]}], ")"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["y", 
+      RowBox[{"19", "/", "2"}]], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"2207224641326123", " ", "\[Pi]"}], "1048863816000"]}], "+", 
+       
+       FractionBox[
+        RowBox[{"23447552", " ", 
+         InterpretationBox[
+          StyleBox["EulerGamma",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          EulerGamma,
+          Editable->False], " ", "\[Pi]"}], "55125"], "-", 
+       FractionBox[
+        RowBox[{"219136", " ", 
+         SuperscriptBox["\[Pi]", "3"]}], "1575"], "-", 
+       FractionBox[
+        RowBox[{"109456", " ", 
+         SuperscriptBox[
+          RowBox[{"Log", "[", "y", "]"}], "2"], " ", "q"}], "525"], "-", 
+       FractionBox[
+        RowBox[{"10755481", " ", "\[Pi]", " ", 
+         SuperscriptBox["q", "2"]}], "33075"], "+", 
+       RowBox[{
+        RowBox[{"Log", "[", "y", "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"11723776", " ", "\[Pi]"}], "55125"], "+", 
+          FractionBox[
+           RowBox[{"3560992", " ", 
+            SuperscriptBox["q", "3"]}], "2835"], "+", 
+          FractionBox[
+           RowBox[{"272", " ", 
+            SuperscriptBox["q", "5"]}], "35"], "+", 
+          RowBox[{"q", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             FractionBox["40237200436", "16372125"], "-", 
+             FractionBox[
+              RowBox[{"437824", " ", 
+               InterpretationBox[
+                StyleBox["EulerGamma",
+                 ShowAutoStyles->False,
+                 AutoSpacing->False],
+                EulerGamma,
+                Editable->False]}], "525"], "-", 
+             FractionBox[
+              RowBox[{"2620096", " ", 
+               RowBox[{
+                InterpretationBox[
+                 StyleBox["Log",
+                  ShowAutoStyles->False,
+                  AutoSpacing->False],
+                 Log,
+                 Editable->False], "[", "2", "]"}]}], "1575"]}], ")"}]}]}], 
+         ")"}]}], "+", 
+       FractionBox[
+        RowBox[{"46895104", " ", "\[Pi]", " ", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Log",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Log,
+           Editable->False], "[", "2", "]"}]}], "55125"], "+", 
+       RowBox[{
+        SuperscriptBox["q", "3"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["164687954986", "297675"], "+", 
+          FractionBox[
+           RowBox[{"5178416", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "2835"], "-", 
+          FractionBox[
+           RowBox[{"17476082953", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "331776"], "+", 
+          FractionBox[
+           RowBox[{"7481392", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "2835"], "+", 
+          FractionBox[
+           RowBox[{"1944", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "3", "]"}]}], "7"], "+", 
+          FractionBox[
+           RowBox[{"71984", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "105"], "-", 
+          RowBox[{
+           FractionBox["1307", "70"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "1"}], "]"}]}], "+", 
+          RowBox[{
+           FractionBox["7424", "21"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}], "+", 
+          RowBox[{
+           FractionBox["111", "14"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "3"}], "]"}]}]}], ")"}]}], "+", 
+       RowBox[{
+        SuperscriptBox["q", "5"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["1079765333", "1786050"], "+", 
+          FractionBox[
+           RowBox[{"272", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "35"], "-", 
+          FractionBox[
+           RowBox[{"53", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "1024"], "+", 
+          FractionBox[
+           RowBox[{"272", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "35"], "+", 
+          FractionBox[
+           RowBox[{"272", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "35"], "-", 
+          RowBox[{
+           FractionBox["36", "35"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "1"}], "]"}]}], "-", 
+          RowBox[{
+           FractionBox["128", "35"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}], "+", 
+          RowBox[{
+           FractionBox["60", "7"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "3"}], "]"}]}]}], ")"}]}], "+", 
+       RowBox[{"q", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["2167536532386661", "2521307250"], "+", 
+          FractionBox[
+           RowBox[{"75699353672", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False]}], "16372125"], "-", 
+          FractionBox[
+           RowBox[{"437824", " ", 
+            SuperscriptBox[
+             InterpretationBox[
+              StyleBox["EulerGamma",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              EulerGamma,
+              Editable->False], "2"]}], "525"], "-", 
+          FractionBox[
+           RowBox[{"780002666754601", " ", 
+            SuperscriptBox["\[Pi]", "2"]}], "7431782400"], "+", 
+          FractionBox[
+           RowBox[{"43593199495", " ", 
+            SuperscriptBox["\[Pi]", "4"]}], "16777216"], "+", 
+          FractionBox[
+           RowBox[{"144895599176", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "16372125"], "-", 
+          FractionBox[
+           RowBox[{"5240192", " ", 
+            InterpretationBox[
+             StyleBox["EulerGamma",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             EulerGamma,
+             Editable->False], " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "2", "]"}]}], "1575"], "-", 
+          FractionBox[
+           RowBox[{"1744448", " ", 
+            SuperscriptBox[
+             RowBox[{
+              InterpretationBox[
+               StyleBox["Log",
+                ShowAutoStyles->False,
+                AutoSpacing->False],
+               Log,
+               Editable->False], "[", "2", "]"}], "2"]}], "525"], "-", 
+          FractionBox[
+           RowBox[{"10841769", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "3", "]"}]}], "6160"], "+", 
+          FractionBox[
+           RowBox[{"9765625", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "5", "]"}]}], "14256"], "+", 
+          FractionBox[
+           RowBox[{"10208", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Log",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Log,
+              Editable->False], "[", "\[Kappa]", "]"}]}], "35"], "+", 
+          RowBox[{
+           FractionBox["2806", "105"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "1"}], "]"}]}], "+", 
+          RowBox[{
+           FractionBox["12416", "105"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "2"}], "]"}]}], "+", 
+          RowBox[{
+           FractionBox["6", "7"], " ", 
+           RowBox[{"\[Psi]", "[", 
+            RowBox[{"0", ",", "3"}], "]"}]}], "+", 
+          FractionBox[
+           RowBox[{"5504", " ", 
+            RowBox[{
+             InterpretationBox[
+              StyleBox["Zeta",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              Zeta,
+              Editable->False], "[", "3", "]"}]}], "5"]}], ")"}]}]}], 
+      ")"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6617159402541933`*^9, 3.66171597387781*^9}, {
+  3.661759533597723*^9, 
+  3.66175956606351*^9}},ExpressionUUID->"13404ac5-0255-4258-af3c-\
+34a983ad0fd5"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{1056, 688},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 199, 3, 148, "Title", "ExpressionUUID" -> \
+"4fc414fe-e1ea-4681-9f0a-4e287686f1ec"],
+Cell[782, 27, 250, 4, 51, "Subtitle", "ExpressionUUID" -> \
+"04164415-dc50-4222-8798-b09e0cfe37fd"],
+Cell[1035, 33, 1374, 30, 71, "Text", "ExpressionUUID" -> \
+"52486258-92e4-4806-ac27-d822337b3843"],
+Cell[2412, 65, 796, 13, 68, "Text", "ExpressionUUID" -> \
+"16753c2e-9316-4a9b-99f7-b467b2a69c13"],
+Cell[CellGroupData[{
+Cell[3233, 82, 214, 4, 64, "Section", "ExpressionUUID" -> \
+"5efed6cc-3961-4b47-865a-faad93c7df05"],
+Cell[3450, 88, 458, 10, 32, "Text", "ExpressionUUID" -> \
+"408e0511-257c-42ed-a758-7813a66d2ba9"],
+Cell[3911, 100, 40507, 1229, 1645, "Input", "ExpressionUUID" -> \
+"13404ac5-0255-4258-af3c-34a983ad0fd5"]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+

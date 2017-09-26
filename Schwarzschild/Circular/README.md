@@ -8,21 +8,23 @@ Yet to be added
 
 ### Redshift Invariant
 
-|PN order 				| Authors								    | Reference										  |
+| PN order 				| Authors								    | Reference										  |
 |-----------------------|-------------------------------------------|-------------------------------------------------|
-|Definition and 3PN 	| S. Detweiler							    | Phys. Rev. D 77:124026 (2008), arXiv:0804.3529  |
-|Some terms up to 10PN  | A. G. Shah, J. L. Friedman, B. F. Whiting | Phys. Rev. D 89:064042 (2014), arXiv:1312.1952  |
-|8.5PN 					| D. Bini, T. Damour                        | Phys. Rev. D 89:104047 (2014), arXiv:1403.2366  |
-|9.5PN 					| D. Bini, T. Damour                        | Phys. Rev. D 91:064050 (2015), arXiv:1502.02450 |
-[21.5PN 				| C. Kavanagh, A. C. Ottewill, B. Wardell   | Phys. Rev. D 92:084025 (2015), arXiv:1503.02334 |
+| Definition and 3PN 	| S. Detweiler							    | Phys. Rev. D 77:124026 (2008), arXiv:0804.3529  |
+| Some terms up to 10PN | A. G. Shah, J. L. Friedman, B. F. Whiting | Phys. Rev. D 89:064042 (2014), arXiv:1312.1952  |
+| 8.5PN 				| D. Bini, T. Damour                        | Phys. Rev. D 89:104047 (2014), arXiv:1403.2366  |
+| 9.5PN 				| D. Bini, T. Damour                        | Phys. Rev. D 91:064050 (2015), arXiv:1502.02450 |
+| 21.5PN 				| C. Kavanagh, A. C. Ottewill, B. Wardell   | Phys. Rev. D 92:084025 (2015), arXiv:1503.02334 |
 
 ### Spin precession invariant
 
-[Definition and 3PN] S. R. Dolan, N. Warburton, A. I. Harte, A. Le Tiec, B. Wardell, L. Barack, Phys. Rev. D 89, 064011 (2014), arXiv:1312.0775 
-[8.5PN] D. Bini, T. Damour, Phys. Rev. D 90, 024039 (2014), arXiv:1404.2747
-[10.5PN] D. Bini, T. Damour, Phys. Rev. D 91, 064064 (2015), arXiv:1503.01272
-[20PN] A. G. Shah, A. Pound, Phys. Rev. D 91, 124022 (2015), arXiv:1503.02414
-[21.5PN] C. Kavanagh, A. C. Ottewill, B. Wardell, Phys. Rev. D 92, 084025 (2015), arXiv:1503.02334
+| PN order 				| Authors								    								| Reference										  |
+|-----------------------|---------------------------------------------------------------------------|-------------------------------------------------|
+| Definition and 3PN    | S. R. Dolan, N. Warburton, A. I. Harte, A. Le Tiec, B. Wardell, L. Barack | Phys. Rev. D 89:064011 (2014), arXiv:1312.0775  |
+| 8.5PN					| D. Bini, T. Damour														| Phys. Rev. D 90:024039 (2014), arXiv:1404.2747  |
+| 10.5PN				| D. Bini, T. Damour														| Phys. Rev. D 91:064064 (2015), arXiv:1503.01272 |
+| 20PN					| A. G. Shah, A. Pound														| Phys. Rev. D 91:124022 (2015), arXiv:1503.02414 |
+| 21.5PN				| C. Kavanagh, A. C. Ottewill, B. Wardell									| Phys. Rev. D 92:084025 (2015), arXiv:1503.02334 |
 
 ### Tidal invariants
 

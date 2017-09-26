@@ -1,6 +1,6 @@
 # PN results for circular orbits in Schwarzschild spacetime
 
-This repository contains the most up to date PN series expansions for circular orbits in Schwarzschild spacetime. Many authors have contributed to our knowledge of these series over the years. Below is a non-exhaustive list of results. Please add any peer reviewed results that are missing.
+This repository contains the most up to date PN series expansions for circular orbits in Schwarzschild spacetime. Many authors have contributed to our knowledge of these series over the years. Below is a non-exhaustive list of results. Please add any peer reviewed results that are missing. Note the PN order given is the highest order to which all the terms are known. Some works also present particular higher-order terms (e.g. log terms).
 
 ### Fluxes
 
@@ -8,13 +8,14 @@ Yet to be added
 
 ### Redshift Invariant
 
-| PN order 				| Authors								    | Reference										  |
-|-----------------------|-------------------------------------------|-------------------------------------------------|
-| Definition and 3PN 	| S. Detweiler							    | Phys. Rev. D 77:124026 (2008), arXiv:0804.3529  |
-| Some terms up to 10PN | A. G. Shah, J. L. Friedman, B. F. Whiting | Phys. Rev. D 89:064042 (2014), arXiv:1312.1952  |
-| 8.5PN 				| D. Bini, T. Damour                        | Phys. Rev. D 89:104047 (2014), arXiv:1403.2366  |
-| 9.5PN 				| D. Bini, T. Damour                        | Phys. Rev. D 91:064050 (2015), arXiv:1502.02450 |
-| 21.5PN 				| C. Kavanagh, A. C. Ottewill, B. Wardell   | Phys. Rev. D 92:084025 (2015), arXiv:1503.02334 |
+| PN order 				| Authors								           | Reference                                       |
+|-----------------------|--------------------------------------------------|-------------------------------------------------|
+| Definition and 3PN 	| S. Detweiler							           | Phys. Rev. D 77:124026 (2008), arXiv:0804.3529  |
+| Some terms up to 10PN | A. G. Shah, J. L. Friedman, B. F. Whiting        | Phys. Rev. D 89:064042 (2014), arXiv:1312.1952  |
+| 8.5PN 				| D. Bini, T. Damour                               | Phys. Rev. D 89:104047 (2014), arXiv:1403.2366  |
+| 9.5PN 				| D. Bini, T. Damour                               | Phys. Rev. D 91:064050 (2015), arXiv:1502.02450 |
+| 12.5PN				| N. K Johnson-McDaniel, A. G. Shah, B. F. Whiting | Phys. Rev. D 92:044007 (2015), arXiv:1503.02638 |
+| 21.5PN 				| C. Kavanagh, A. C. Ottewill, B. Wardell          | Phys. Rev. D 92:084025 (2015), arXiv:1503.02334 |
 
 ### Spin precession invariant
 

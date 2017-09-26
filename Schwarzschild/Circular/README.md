@@ -28,11 +28,15 @@ Yet to be added
 
 ### Tidal invariants
 
-[Definition and 1PN] S. R. Dolan, P. Nolan, A. C. Ottewill, N. Warburton, B. Wardell, Phys. Rev. D 91, 023009 (2015), arXiv:1406.4890 
-[7.5PN] D. Bini, T. Damour, Phys. Rev. D 90, 124037 (2014), arXiv:1409.6933
-[20PN] A. G. Shah, A. Pound, Phys. Rev. D 91, 124022 (2015), arXiv:1503.02414
-[21.5PN] C. Kavanagh, A. C. Ottewill, B. Wardell, Phys. Rev. D 92, 084025 (2015), arXiv:1503.02334
+| PN order 				| Authors								    								| Reference										  |
+|-----------------------|---------------------------------------------------------------------------|-------------------------------------------------|
+| Definition and 1PN    | S. R. Dolan, P. Nolan, A. C. Ottewill, N. Warburton, B. Wardell           | Phys. Rev. D 91:023009 (2015), arXiv:1406.4890  |
+| 7.5PN                 | D. Bini, T. Damour                                                        | Phys. Rev. D 90:124037 (2014), arXiv:1409.6933  |
+| 20PN                  | A. G. Shah, A. Pound	                                                    | Phys. Rev. D 91:124022 (2015), arXiv:1503.02414 |
+| 21.5PN                | C. Kavanagh, A. C. Ottewill, B. Wardell                                   | Phys. Rev. D 92:084025 (2015), arXiv:1503.02334 |
 
 ### Octupolar invariants
 
-[Definition and 15PN] P. Nolan, C. Kavanagh, S. R. Dolan, A. C. Ottewill, N. Warburton, B. Wardell, Phys. Rev. D 92, 123008 (2015), arXiv:1505.04447
+| PN order 				| Authors								    								   | Reference										 |
+|-----------------------|------------------------------------------------------------------------------|-------------------------------------------------|
+| Definition and 15PN   | P. Nolan, C. Kavanagh, S. R. Dolan, A. C. Ottewill, N. Warburton, B. Wardell | Phys. Rev. D 92:123008 (2015), arXiv:1505.04447 |

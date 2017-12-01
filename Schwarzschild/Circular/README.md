@@ -2,9 +2,15 @@
 
 This repository contains the most up to date PN series expansions for circular orbits in Schwarzschild spacetime. Many authors have contributed to our knowledge of these series over the years. Below is a non-exhaustive list of results. Please add any peer reviewed results that are missing. Note the PN order given is the highest order to which all the terms are known. Some works also present particular higher-order terms (e.g. log terms).
 
-### Fluxes
+### Fluxes (Infinity)
 
 Yet to be added
+
+###
+
+| PN order 	   | Authors                                              | Reference                                       |
+|--------------|------------------------------------------------------|-------------------------------------------------|
+| 22PN         | A. G. Shah                                           | Phys. Rev. D 90:044025 (2014), arXiv:1403.2697  |
 
 ### Redshift Invariant
 

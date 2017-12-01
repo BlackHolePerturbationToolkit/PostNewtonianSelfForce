@@ -6,7 +6,7 @@ This repository contains the most up to date PN series expansions for circular o
 
 Yet to be added
 
-###
+### Fluxes (Horizon)
 
 | PN order 	   | Authors                                              | Reference                                       |
 |--------------|------------------------------------------------------|-------------------------------------------------|

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1012154,      15473]
-NotebookOptionsPosition[   1010732,      15430]
-NotebookOutlinePosition[   1011089,      15446]
-CellTagsIndexPosition[   1011046,      15443]
+NotebookDataLength[   1012518,      15478]
+NotebookOptionsPosition[   1011096,      15435]
+NotebookOutlinePosition[   1011453,      15451]
+CellTagsIndexPosition[   1011410,      15448]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -44,17 +44,22 @@ around a Schwarzschild Black Hole to the 22nd Post-Newtonian Order\
 \[CloseCurlyDoubleQuote], R. Fujita, Prog. Theor. Phys. 128 (2012) pp. \
 971-992, arXiv:1211.5535.
 
-The calculation of the horizon fluxes was given in \
+The calculation of the horizon fluxes to 22PN-order was given in \
 \[OpenCurlyDoubleQuote]Gravitational-wave flux for a particle orbiting a Kerr \
 black hole to 20th post-Newtonian order: a numerical approach\
-\[CloseCurlyDoubleQuote], Abhay. G. Shah, Phys. Rev. D. 90:044025, \
-arXiv:1403.2697\
+\[CloseCurlyDoubleQuote], A. G. Shah, Phys. Rev. D. 90:044025, \
+arXiv:1403.2697
+A calculation of the horizon fluxes to a 22.5PN-order was given in \
+\[OpenCurlyDoubleQuote]Gravitational Waves from a Particle in Circular Orbits \
+around a Rotating Black Hole to the 11th Post-Newtonian Order\
+\[CloseCurlyDoubleQuote], R. Fujita, Prog. Theor. Exp. Phys. 3:033E01 (2015), \
+arXiv:1412.5689\
 \>", "Text",
  CellChangeTimes->{{3.721113886336224*^9, 3.721114000479229*^9}, {
   3.721114033814891*^9, 3.7211140630633307`*^9}, {3.721114212646427*^9, 
   3.721114219641197*^9}, {3.721114275241407*^9, 3.72111434204176*^9}, {
-  3.7213087191723557`*^9, 
-  3.721308730731008*^9}},ExpressionUUID->"b4227720-af2f-4b82-a143-\
+  3.7213087191723557`*^9, 3.721308730731008*^9}, {3.721369926077176*^9, 
+  3.721370057791217*^9}},ExpressionUUID->"b4227720-af2f-4b82-a143-\
 3004c6f77e1b"],
 
 Cell[CellGroupData[{
@@ -15450,28 +15455,28 @@ Cell[580, 22, 228, 4, 92, "Title", "ExpressionUUID" -> \
 "e3458814-50eb-41d1-8424-d119055d6650"],
 Cell[811, 28, 327, 5, 51, "Subtitle", "ExpressionUUID" -> \
 "b70358d5-545d-4c15-a396-905ccef4fe47"],
-Cell[1141, 35, 1124, 22, 144, "Text", "ExpressionUUID" -> \
+Cell[1141, 35, 1488, 27, 182, "Text", "ExpressionUUID" -> \
 "b4227720-af2f-4b82-a143-3004c6f77e1b"],
 Cell[CellGroupData[{
-Cell[2290, 61, 162, 3, 64, "Section", "ExpressionUUID" -> \
+Cell[2654, 66, 162, 3, 64, "Section", "ExpressionUUID" -> \
 "69fc5966-bc28-410f-8fad-3bda667c3cc8"],
 Cell[CellGroupData[{
-Cell[2477, 68, 161, 3, 44, "Subsection", "ExpressionUUID" -> \
+Cell[2841, 73, 161, 3, 44, "Subsection", "ExpressionUUID" -> \
 "9445b7ad-ec15-484d-b149-375155fd98e0"],
-Cell[2641, 73, 992998, 14928, 896, "Input", "ExpressionUUID" -> \
+Cell[3005, 78, 992998, 14928, 896, "Input", "ExpressionUUID" -> \
 "bc7c3a36-7099-4061-9c8d-2165e93cc53b"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[995676, 15006, 215, 4, 36, "Subsection", "ExpressionUUID" -> \
+Cell[996040, 15011, 215, 4, 36, "Subsection", "ExpressionUUID" -> \
 "089c53ed-5a27-4238-9586-e3eea848c52f"],
-Cell[995894, 15012, 535, 14, 50, "Input", "ExpressionUUID" -> \
+Cell[996258, 15017, 535, 14, 50, "Input", "ExpressionUUID" -> \
 "4ecfbfe8-9ba0-4a5b-91c3-20fce2dd9ae5"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[996478, 15032, 158, 3, 50, "Section", "ExpressionUUID" -> \
+Cell[996842, 15037, 158, 3, 50, "Section", "ExpressionUUID" -> \
 "19dbd2e5-49cf-4b13-bb8c-d659fb60e6d0"],
-Cell[996639, 15037, 14065, 389, 654, "Input", "ExpressionUUID" -> \
+Cell[997003, 15042, 14065, 389, 654, "Input", "ExpressionUUID" -> \
 "7fb5312c-bb46-4b09-b6dd-e5d5ea31b163"]
 }, Closed]]
 }, Open  ]]

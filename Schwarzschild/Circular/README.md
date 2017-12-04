@@ -4,13 +4,19 @@ This repository contains the most up to date PN series expansions for circular o
 
 ### Fluxes (Infinity)
 
-Yet to be added
+| PN order 	   | Authors                                              | Reference                                                   |
+|--------------|------------------------------------------------------|-------------------------------------------------------------|
+| 5.5PN        | T. Tanaka, H. Tagoshi, M. Sasaki                     | Prog. Theor. Phys. 96:1087-1101 (1996), arXiv:gr-qc/9701050 |
+| 14 PN        | R. Fujita                                            | Prog. Theor. Phys. 127:583-590 (2012), arXiv:1104.5615      |
+| 22PN         | R. Fujita                                            | Prog. Theor. Phys. 128:971-992 (2012), arXiv:1211.5535      |
 
 ### Fluxes (Horizon)
 
-| PN order 	   | Authors                                              | Reference                                       |
-|--------------|------------------------------------------------------|-------------------------------------------------|
-| 22PN         | A. G. Shah                                           | Phys. Rev. D 90:044025 (2014), arXiv:1403.2697  |
+| PN order 	   | Authors                                              | Reference                                                 |
+|--------------|------------------------------------------------------|-----------------------------------------------------------|
+| 6.5PN        | H. Tagoshi, S. Mano, E. Takasugi                     | Prog. Theor. Phys. 98:829-850 (1997), arXiv:gr-qc/9711072 |
+| 22PN         | A. G. Shah                                           | Phys. Rev. D 90:044025 (2014), arXiv:1403.2697            |
+| 22.5PN       | R. Fujita                                            | Prog. Theor. Exp. Phys. 3:033E01 (2015), arXiv:1412.5689  |
 
 ### Redshift Invariant
 

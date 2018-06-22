@@ -4,6 +4,7 @@ BeginPackage["PostNewtonianSelfForce`"];
 
 PostNewtonianExpansion::usage = "PostNewtonianExpansion[quantity] gives the post-Newtonian expansion of 'quantity'.";
 PostNewtonianData::usage = "PostNewtonianData[\[Ellipsis]] represents a post-Newtonian expansion.";
+PostNewtonianCoefficient::usage = "PostNewtonianCoefficient[PostNewtonianExpansion, n, nL] gives the \!\(\*SuperscriptBox[\(y\), \(n\)]\)Log[y\!\(\*SuperscriptBox[\(]\), \(nL\)]\) term of the post-Newtonian expansion"
 
 Begin["`Private`"];
 
@@ -65,6 +66,15 @@ Format[p:PostNewtonianData[data_Association]] :=
       BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]
     }, "SummaryPanel"], "]"}], p, Editable -> False, SelectWithContents -> True, Selectable -> False]]]
 ];
+
+(**********************************************************)
+(* PostNewtonianCoefficient                               *)
+(**********************************************************)
+(* Convenience function for extracting individual PN terms from the series *)
+
+PostNewtonianCoefficient[PNSeries_, n_] := SeriesCoefficient[PNSeries["Series"], n]
+PostNewtonianCoefficient[PNSeries_, n_, 0] := SeriesCoefficient[PNSeries["Series"], n]/.{Log[PNSeries["Series"][[1]]]^n->0,Log[PNSeries["Series"][[1]]]->0}
+PostNewtonianCoefficient[PNSeries_, n_, nL_] := Coefficient[SeriesCoefficient[PNSeries["Series"], n], Log[PNSeries["Series"][[1]]]^nL]
 
 End[];
 

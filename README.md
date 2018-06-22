@@ -65,3 +65,4 @@ be found in the LICENSE file.
 # Authors
 
 Barry Wardell  
+Niels Warburton

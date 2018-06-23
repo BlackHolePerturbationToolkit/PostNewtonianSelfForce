@@ -62,7 +62,15 @@ This code is distributed under the MIT License. Details can
 be found in the LICENSE file.
 
 
-# Authors
+# Module authors and series contributors
 
 Barry Wardell  
 Niels Warburton
+
+PN-SF series contributed by:
+
+Ryuichi Fujita
+Chris Kavanagh
+Adrian Ottewill
+Abhay Shah
+Barry Wardell

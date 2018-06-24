@@ -69,7 +69,10 @@ Niels Warburton
 
 PN-SF series contributed by:
 
+Donato Bini
+Thibault Damour
 Ryuichi Fujita
+Seth Hopper
 Chris Kavanagh
 Adrian Ottewill
 Abhay Shah

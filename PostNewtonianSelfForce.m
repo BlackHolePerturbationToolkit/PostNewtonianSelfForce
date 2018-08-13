@@ -4,7 +4,7 @@ BeginPackage["PostNewtonianSelfForce`"];
 
 PostNewtonianExpansion::usage = "PostNewtonianExpansion[quantity] gives the post-Newtonian expansion of 'quantity'.";
 PostNewtonianData::usage = "PostNewtonianData[\[Ellipsis]] represents a post-Newtonian expansion.";
-PostNewtonianCoefficient::usage = "PostNewtonianCoefficient[PostNewtonianExpansion, n, nL] gives the \!\(\*SuperscriptBox[\(y\), \(n\)]\)Log[y\!\(\*SuperscriptBox[\(]\), \(nL\)]\) term of the post-Newtonian expansion"
+PostNewtonianCoefficient::usage = "PostNewtonianCoefficient[PostNewtonianData, n, nL] gives the \!\(\*SuperscriptBox[\(y\), \(n\)]\)Log[y\!\(\*SuperscriptBox[\(]\), \(nL\)]\) coefficient of the post-Newtonian expansion."
 
 Begin["`Private`"];
 

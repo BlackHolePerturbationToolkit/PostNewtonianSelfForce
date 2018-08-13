@@ -1,6 +1,7 @@
 (* ::Package:: *)
 
-BeginPackage["PostNewtonianSelfForce`"];
+BeginPackage["PostNewtonianSelfForce`",
+ {"PostNewtonianSelfForce`ResummedSeries`"}];
 
 PostNewtonianExpansion::usage = "PostNewtonianExpansion[quantity] gives the post-Newtonian expansion of 'quantity'.";
 PostNewtonianData::usage = "PostNewtonianData[\[Ellipsis]] represents a post-Newtonian expansion.";

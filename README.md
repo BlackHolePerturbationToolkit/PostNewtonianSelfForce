@@ -67,7 +67,7 @@ be found in the LICENSE file.
 Barry Wardell  
 Niels Warburton
 
-PN-SF series contributed by:
+PN-SF series contributed by\:
 
 Donato Bini
 Thibault Damour

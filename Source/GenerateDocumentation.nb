@@ -1,0 +1,143 @@
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"ParentDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], ";"}]], "Input",
+ ExpressionUUID -> "f5d793f4-930c-4680-8d87-49925e8d47eb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"docDir", "=", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"FileNameDrop", "[", 
+      RowBox[{
+       RowBox[{"FindFile", "[", "\"\<PostNewtonianSelfForce`\>\"", "]"}], ",", 
+       RowBox[{"-", "2"}]}], "]"}], ",", "\"\<Documentation\>\""}], "}"}], 
+   "]"}]}]], "Input",
+ ExpressionUUID -> "0d52f02e-d059-4095-8bff-c5e394b58809"],
+
+Cell[BoxData["\<\"/Users/niels/Library/Mathematica/Applications/\
+PostNewtonianSelfForce/Documentation\"\>"], "Output",
+ ExpressionUUID -> "ffadd1c7-f6d8-4b66-a251-41819511e7ce"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Short", "[", 
+  RowBox[{
+   RowBox[{"docFiles", "=", 
+    RowBox[{"Select", "[", 
+     RowBox[{
+      RowBox[{"FileNames", "[", 
+       RowBox[{"\"\<*\>\"", ",", "docDir", ",", "Infinity"}], "]"}], ",", 
+      RowBox[{
+       RowBox[{"!", 
+        RowBox[{"DirectoryQ", "[", "#", "]"}]}], "&"}]}], "]"}]}], ",", 
+   "10"}], "]"}]], "Input",
+ ExpressionUUID -> "8c555470-d0b2-42a9-a3f1-3cc788b01f85"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", 
+   RowBox[{"\<\"/Users/niels/Library/Mathematica/Applications/\
+PostNewtonianSelfForce/Documentation/English/Guides/PostNewtonianSelfForce.nb\
+\"\>", ",", \
+"\<\"/Users/niels/Library/Mathematica/Applications/PostNewtonianSelfForce/\
+Documentation/English/Index/_0.cfs\"\>", 
+    ",", "\<\"/Users/niels/Library/Mathematica/Applications/\
+PostNewtonianSelfForce/Documentation/English/Index/segments_3\"\>", 
+    ",", "\<\"/Users/niels/Library/Mathematica/Applications/\
+PostNewtonianSelfForce/Documentation/English/Index/segments.gen\"\>", ",", 
+    RowBox[{"\[LeftSkeleton]", "11", "\[RightSkeleton]"}], 
+    ",", "\<\"/Users/niels/Library/Mathematica/Applications/\
+PostNewtonianSelfForce/Documentation/English/TextSearchIndex/segments_2\"\>", 
+    ",", "\<\"/Users/niels/Library/Mathematica/Applications/\
+PostNewtonianSelfForce/Documentation/English/TextSearchIndex/write.lock\"\>", 
+    ",", "\<\"/Users/niels/Library/Mathematica/Applications/\
+PostNewtonianSelfForce/Documentation/English/Tutorials/PostNewtonianSelfForce.\
+nb\"\>"}], "}"}],
+  Short[#, 10]& ]], "Output",
+ ExpressionUUID -> "d29d91d6-ab05-4e1c-a691-ca682643a29b"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"DeleteFile", "[", "docFiles", "]"}]], "Input",
+ ExpressionUUID -> "523ec43c-a183-4488-a170-82c96832e268"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"<<", "\"\<Source/GenerateDocumentation.m\>\""}]], "Input",
+ ExpressionUUID -> "15a69e27-fa98-4251-93a2-3272defeea1e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Building symbol reference pages\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData["\<\"PostNewtonianCoefficient\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData["\<\"PostNewtonianData\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData["\<\"PostNewtonianExpansion\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData["\<\"Building guides\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Creating \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/Users/niels/Library/Mathematica/Applications/PostNewtonianSelfForce/\
+Documentation/English/Guides\"\>"}],
+  SequenceForm[
+  "Creating ", 
+   "/Users/niels/Library/Mathematica/Applications/PostNewtonianSelfForce/\
+Documentation/English/Guides"],
+  Editable->False]], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData["\<\"Building tutorials\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData["\<\"Source/Documentation/English/Tutorials/\
+PostNewtonianSelfForce.md\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Removing \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"result\"\>", ",", "\<\"SchwInfinity\"\>", ",", "\<\"y\"\>"}],
+     "}"}]}],
+  SequenceForm["Removing ", {"result", "SchwInfinity", "y"}],
+  Editable->False]], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData["\<\"Indexing Documentation\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"],
+
+Cell[BoxData["\<\"Done\"\>"], "Print",
+ ExpressionUUID -> "37410a33-336a-4c9c-a6a8-3c04bf7981d3"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{984, 867},
+WindowMargins->{{140, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False,
+"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+ShowSelection->True,
+TrackCellChangeTimes->False,
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+

@@ -23,6 +23,9 @@ $PostNewtonianSelfForceSeriesDataDirectory = FileNameJoin[{$PostNewtonianSelfFor
 SyntaxInformation[PostNewtonianExpansion] =
  {"ArgumentsPattern" -> {_}};
 
+PostNewtonianExpansion[quantity:(_String|{__String}), l_Integer, m_Integer] :=
+	PostNewtonianExpansion[quantity <> "-l" <> ToString[l] <> "m" <> ToString[m]]
+
 PostNewtonianExpansion[quantity:(_String|{__String})] :=
  Module[{dataFile, data},
   dataFile = FileNameJoin[Flatten[{$PostNewtonianSelfForceSeriesDataDirectory, quantity}]] <> ".m";

@@ -9,7 +9,7 @@ Module[{SchwInfinity},
     "Description" -> "Spin corrections to the Post-Newtonian expansion for the radiated flux to infinity for the l=2,m=2 mode for a particle on a circular orbit about a Schwarzschild black hole to the linear order in the mass-ratio.",
     "Authors" -> {"Alessandro Nagar, Francesco Messina, Chris Kavanagh, Georgios Lukes-Gerakopoulos, Niels Warburton, Sebastiano Bernuzzi, and Enno Harms"},
     "References" -> {
-      "Factorization and resummation: A new paradigm to improve gravitational wave amplitudes. III: the spinning test-body terms., arXiv:????.????."
+      "Factorization and resummation: A new paradigm to improve gravitational wave amplitudes. III: the spinning test-body terms., arXiv:1907.12233."
     },
     "Series" -> SchwInfinity
   |>

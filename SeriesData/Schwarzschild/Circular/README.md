@@ -2,6 +2,8 @@
 
 This repository contains the most up to date PN series expansions for circular orbits in Schwarzschild spacetime. Many authors have contributed to our knowledge of these series over the years. Below is a non-exhaustive list of results. Please add any peer reviewed results that are missing. Note the PN order given is the highest order to which all the terms are known. Some works also present particular higher-order terms (e.g. log terms).
 
+## Point particle results
+
 ### Fluxes (Infinity)
 
 | PN order 	   | Authors                                              | Reference                                                                                          |
@@ -55,3 +57,12 @@ This repository contains the most up to date PN series expansions for circular o
 | PN order 	| Authors								    								   | Reference										                                     |
 |-----------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | 15PN      | P. Nolan, C. Kavanagh, S. R. Dolan, A. C. Ottewill, N. Warburton, B. Wardell | Phys. Rev. D 92:123008 (2015), [arXiv:1505.04447](https://arxiv.org/abs/1505.04447) |
+
+
+## Spinning secondary
+
+### Fluxes (Infinity)
+
+| PN order 	   | Authors                                              | Reference                                                                                          |
+|--------------|------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| 5.5 PN	   | A. Nagar et al.									  | [arXiv:1907.12233](https://arxiv.org/abs/1907.12233)

@@ -11,63 +11,43 @@ etc). The results give the highest-order PN results known. Each subdirectory has
 a README.md file that shows who has contributed to the growth of these PN series
 over the years.
 
-## Getting the package
+## Loading the PN data
 
-The latest development version will always be available from the project git
-repository:
+Loading a PN series is done using the `PostNewtonianExpansion` command. For example to load the PN series for the flux radiated to infinite for the particle on a circular orbit about a Schwarzschild use the command
 
-git clone https://github.com/BlackHolePerturbationToolkit/PostNewtonianSelfForce.git
+```
+PNSeries = PostNewtonianExpansion["Schwarzschild/Circular/Flux/Infinity"]
+```
 
+This returns 
 
-# Requirements
+<center><img src = "PNData.png" width="60%"></center>
 
-Mathematica: PostNewtonianSelfForce requires a recent version of
-  Mathematica. It is typically tested with only the latest available version.
+This `PostNewtonianData` object stores the PN series  and information about it.
 
+## Working with the PN series
 
-# Installation
+The entire PN series can be extracted using the command
+```
+ PNSeries["Series"]
+```
 
-Clone the repository and place it somewhere on Mathematica's `$Path`.
-Typical locations are inside `${HOME}/.Mathematica/Applications/` for Linux or
-inside `${HOME}/Library/Mathematica/Applications/` for Mac OSX.
-
-
-# Usage
-
-The package may be loaded into Mathematica using the command:
-
-<< PostNewtonianSelfForce`
+In this case the series is very large. If instead you just want a particular coefficient use `PostNewtonianCoefficient[PNSeries, n]` where n is the power of $y$ whose coefficient you're interested in.
 
 
-# Examples
+## Referencing
 
-Examples are included in the documentation. See the
-PostNewtonianSelfForce page in Documentation Center.
+If you make use of any PN series in your work you can find the correct reference by calling `PNSeries["References"]`. In this case this returns
 
+```
+{"Gravitational Waves from a Particle in Circular Orbits around a 
+Schwarzschild Black Hole to the 22nd Post-Newtonian Order, R. Fujita, 
+Prog. Theor. Phys. 128 (2012) pp. 971-992, arXiv:1211.5535."}
+```
 
-# Changelog
-
-7 Jan 2018: Initial version released.
-
-
-# Known problems
-
-Known bugs and issues are recorded in the project bug tracker:
-
-https://github.com/BlackHolePerturbationToolkit/PostNewtonianSelfForce/issues
+It is important to note that this reference is only for the most recent paper concerning that PN series. For a fill list of all the contributions made my many authors over the years please look for the README files in the in the SeriesData folder in the repository (e.g., in the [circular orbit series directory](https://github.com/BlackHolePerturbationToolkit/PostNewtonianSelfForce/tree/master/SeriesData/Schwarzschild/Circular)).
 
 
-# License
+## Further examples
 
-This code is distributed under the MIT License. Details can
-be found in the LICENSE file.
-
-
-# Module authors and series contributors
-
-Barry Wardell  
-Niels Warburton
-
-PN-SF series contributed by:
-
-Donato Bini, Thibault Damour, Ryuichi Fujita, Seth Hopper, Chris Kavanagh, Adrian Ottewill, Abhay Shah, Barry Wardell
+Example notebooks can be found in the [Mathematica Toolkit Examples repository](https://github.com/BlackHolePerturbationToolkit/MathematicaToolkitExamples).

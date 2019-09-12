@@ -11,15 +11,26 @@ etc). The results give the highest-order PN results known. Each subdirectory has
 a README.md file that shows who has contributed to the growth of these PN series
 over the years.
 
-## Loading the PN data
+## Listing and loading the PN series
 
-Loading a PN series is done using the `PostNewtonianExpansion` command. For example to load the PN series for the flux radiated to infinite for the particle on a circular orbit about a Schwarzschild use the command
+List and loading PN series is done using the `PostNewtonianExpansion` command. To list all the available PN series use `PostNewtonianSelfForce[]`. This will produce a long list. To return a subset of this list you can provide a String or List of Stings as an argument. You can also use a `!` prefix to exclude a given String. For example, if you want to list all PN series in Kerr spacetime, but not ones involving fluxes you can use
+```
+PostNewtonianExpansion[{"Kerr", "!Flux"}]
+```
+This returns the list
+```
+
+```
+
+To load a PN series provide a List of Strings that returns a unique result. For example to load the PN series for the flux radiated to infinity for the particle on a circular orbit about a Schwarzschild use the command
 
 ```
 PNSeries = PostNewtonianExpansion["Schwarzschild/Circular/Flux/Infinity"]
 ```
 
-This returns 
+Alternatively, you could use `PNSeries = PostNewtonianExpansion[{"Schwarzschild", "Flux", "Infinity", "Circular"}]` but note that as more PN series are added this might not return a unique series.
+
+The above command returns 
 
 <center><img src = "PNData.png" width="60%"></center>
 

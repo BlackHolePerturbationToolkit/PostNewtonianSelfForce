@@ -13,7 +13,7 @@ over the years.
 
 ## Listing and loading the PN series
 
-Listing and loading PN series is done using the `PostNewtonianExpansion` command. To list all the available PN series use `PostNewtonianSelfForce[]`. This will produce a long list. To return a subset of this list you can provide a String or List of Stings as an argument. You can also use a `!` prefix to exclude a given String. For example, if you want to list all PN series for circular orbits in Schwarzschild spacetime, but not ones involving spin you can use
+Listing and loading PN series is done using the `PostNewtonianExpansion` command. To list all the available PN series use `PostNewtonianExpansion[]`. This will produce a long list. To return a subset of this list you can provide a String or List of Stings as an argument. You can also use a `!` prefix to exclude a given String. For example, if you want to list all PN series for circular orbits in Schwarzschild spacetime, but not ones involving spin you can use
 ```
 PostNewtonianExpansion[{"Schwarzschild", "!Spin", "Circular"}]
 ```

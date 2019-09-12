@@ -13,24 +13,25 @@ over the years.
 
 ## Listing and loading the PN series
 
-List and loading PN series is done using the `PostNewtonianExpansion` command. To list all the available PN series use `PostNewtonianSelfForce[]`. This will produce a long list. To return a subset of this list you can provide a String or List of Stings as an argument. You can also use a `!` prefix to exclude a given String. For example, if you want to list all PN series in Kerr spacetime, but not ones involving fluxes you can use
+Listing and loading PN series is done using the `PostNewtonianExpansion` command. To list all the available PN series use `PostNewtonianSelfForce[]`. This will produce a long list. To return a subset of this list you can provide a String or List of Stings as an argument. You can also use a `!` prefix to exclude a given String. For example, if you want to list all PN series for circular orbits in Schwarzschild spacetime, but not ones involving spin you can use
 ```
-PostNewtonianExpansion[{"Kerr", "!Flux"}]
+PostNewtonianExpansion[{"Schwarzschild", "!Spin", "Circular"}]
 ```
-This returns the list
+At the time of writing this returns
+```
+{"/Schwarzschild/Circular/Flux/Horizon", "/Schwarzschild/Circular/Flux/Infinity-l2m2", 
+"/Schwarzschild/Circular/Flux/Infinity", "/Schwarzschild/Circular/Local/RedShift"}
 ```
 
-```
-
-To load a PN series provide a List of Strings that returns a unique result. For example to load the PN series for the flux radiated to infinity for the particle on a circular orbit about a Schwarzschild use the command
+To load a PN series provide a String or List of Strings that returns a unique result. For example to load the PN series for the flux radiated to infinity for a particle on a circular orbit about a Schwarzschild black hole use the command
 
 ```
 PNSeries = PostNewtonianExpansion["Schwarzschild/Circular/Flux/Infinity"]
 ```
 
-Alternatively, you could use `PNSeries = PostNewtonianExpansion[{"Schwarzschild", "Flux", "Infinity", "Circular"}]` but note that as more PN series are added this might not return a unique series.
+Alternatively, you could use, e.g., `PNSeries = PostNewtonianExpansion[{"Schwarzschild", "Flux", "Infinity", "Circular"}]` but note that as more PN series are added this might not return a unique series.
 
-The above command returns 
+Executing the above command returns 
 
 <center><img src = "PNData.png" width="60%"></center>
 

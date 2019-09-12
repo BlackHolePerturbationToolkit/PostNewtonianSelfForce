@@ -20,11 +20,10 @@ $PostNewtonianSelfForceSeriesDataDirectory = FileNameJoin[{$PostNewtonianSelfFor
 (* PostNewtonianExpansion                                 *)
 (**********************************************************)
 
-SyntaxInformation[PostNewtonianExpansion] =
- {"ArgumentsPattern" -> {_}};
-
 (*PostNewtonianExpansion[quantity:(_String|{__String}), l_Integer, m_Integer] :=
 	PostNewtonianExpansion[quantity <> "-l" <> ToString[l] <> "m" <> ToString[m]]*)
+
+PostNewtonianExpansion[] := PostNewtonianExpansion[""]
 
 PostNewtonianExpansion[quantity:(_String|{__String})] :=
  Module[{dataFile, data, allSeries, subList},

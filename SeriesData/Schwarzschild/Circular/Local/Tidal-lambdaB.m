@@ -5,10 +5,9 @@ Module[{\[CapitalDelta]\[Lambda]B},
   <|
     "Name" -> "Schwarzschild Circular Orbit Tidal Invariant \[CapitalDelta]\[Lambda]B",
     "Description" -> "Post-Newtonian expansion for the \[CapitalDelta]\[Lambda]B tidal invariant for a particle on a circular orbit about a Schwarzschild black hole to the linear order in the mass-ratio.",
-    "Authors" -> {"Sam R. Dolan, Patrick Nolan, Adrian C. Ottewill, Niels Warburton, Barry Wardell"},
+    "Authors" -> {"Chris Kavanagh, Adrian C. Ottewill, Barry Wardell"},
     "References" -> {
-      "Tidal invariants for compact binaries on quasi-circular orbits, Sam R. Dolan, Patrick Nolan, Adrian C. Ottewill, Niels Warburton, Barry Wardell, Phys. Rev. D 91, 023009 (2015), arXiv:1406.4890"
+      "Analytical high-order post-Newtonian expansions for extreme mass ratio binaries, Chris Kavanagh, Adrian C. Ottewill, Barry Wardell, Phys. Rev. D 92, 084025 (2015), arXiv:1503.02334"
     },
-    "Series" -> \[CapitalDelta]\[Lambda]B
   |>
 ]

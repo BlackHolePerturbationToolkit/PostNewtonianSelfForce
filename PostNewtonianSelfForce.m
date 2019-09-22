@@ -20,18 +20,27 @@ $PostNewtonianSelfForceSeriesDataDirectory = FileNameJoin[{$PostNewtonianSelfFor
 (* PostNewtonianExpansion                                 *)
 (**********************************************************)
 
-SyntaxInformation[PostNewtonianExpansion] =
- {"ArgumentsPattern" -> {_}};
+(*PostNewtonianExpansion[quantity:(_String|{__String}), l_Integer, m_Integer] :=
+	PostNewtonianExpansion[quantity <> "-l" <> ToString[l] <> "m" <> ToString[m]]*)
+
+PostNewtonianExpansion[] := PostNewtonianExpansion[""]
 
 PostNewtonianExpansion[quantity:(_String|{__String})] :=
- Module[{dataFile, data},
-  dataFile = FileNameJoin[Flatten[{$PostNewtonianSelfForceSeriesDataDirectory, quantity}]] <> ".m";
+ Module[{dataFile, data, allSeries, subList},
+  allSeries=StringDelete[FileNames["*.m", $PostNewtonianSelfForceSeriesDataDirectory, Infinity], {$PostNewtonianSelfForceSeriesDataDirectory, ".m"}];
+  subList=Fold[SelectFromPNSeriesList, allSeries, Flatten[{quantity},1]];
+  If[Length[subList]==1,
+    PostNewtonianData[Get[$PostNewtonianSelfForceSeriesDataDirectory <> subList[[1]] <> ".m"]],
+    subList
+  ]
+]
 
-  If[!FileExistsQ[dataFile],
-    Return[$Failed];
-  ];
-
-  PostNewtonianExpansion[quantity] = PostNewtonianData[Get[dataFile]]
+SelectFromPNSeriesList[SeriesList_,string_String]:=Block[{},
+  If[string=="",Return[SeriesList]];
+  If[StringTake[string,1]=="!",
+    Select[SeriesList,Not[StringContainsQ[#,StringTake[string,2;;]]]&],
+    Select[SeriesList,StringContainsQ[#,string]&]
+  ]
 ]
 
 (**********************************************************)

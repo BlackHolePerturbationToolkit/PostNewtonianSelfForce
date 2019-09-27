@@ -7,13 +7,13 @@ This repository contains the most up to date PN series expansions for eccentric 
 | PN order  | Authors                                                                | Reference                                                                           |
 |-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | 7PN, varying orders in e^2  | E. Forseth, C. R. Evans, S. Hopper                 | Phys. Rev. D 93:064058 (2016), [arXiv:1512.03051](https://arxiv.org/abs/1512.03051v1) |
-| Leading logs, 6PN Log, all orders in e^2 | C. Munna, C. R. Evans                                 | [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) |
+| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans                                 | [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) (2019) |
 
 ### Angular Momentum flux at Infinity
 
 | PN order  | Authors                                                                | Reference                                                                           |
 |-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Leading logs, 6PN Log, all orders in e^2 | C. Munna, C. R. Evans                                 | [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) |
+| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans                                 | [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) (2019) |
 
 ### Redshift invariant
 

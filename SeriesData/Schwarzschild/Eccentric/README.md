@@ -2,9 +2,18 @@
 
 This repository contains the most up to date PN series expansions for eccentric orbits in Schwarzschild spacetime. Many authors have contributed to our knowledge of these series over the years. Below is a non-exhaustive list of results. Please add any peer reviewed results that are missing. Note the PN order given is the highest order to which all the terms are known. Some works also present particular higher-order terms (e.g. log terms).
 
-### Fluxes
+### Energy flux at Infinity
 
-Yet to be added
+| PN order  | Authors                                                                | Reference                                                                           |
+|-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| 7PN, varying orders in e^2  | E. Forseth, C. R. Evans, S. Hopper                 | Phys. Rev. D 93:064058 (2016), [arXiv:1512.03051](https://arxiv.org/abs/1512.03051v1) |
+| Leading logs, 6PN Log, all orders in e^2 | C. Munna, C. R. Evans                                 | [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) |
+
+### Angular Momentum flux at Infinity
+
+| PN order  | Authors                                                                | Reference                                                                           |
+|-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Leading logs, 6PN Log, all orders in e^2 | C. Munna, C. R. Evans                                 | [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) |
 
 ### Redshift invariant
 

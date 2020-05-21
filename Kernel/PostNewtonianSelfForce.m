@@ -54,9 +54,9 @@ PostNewtonianData[data_Association][quantity_String] :=
   data[quantity]
 ]
 
-Format[p:PostNewtonianData[data_Association]] :=
- Module[{name, startOrder, maxOrder, den},
-  name = data["Name"];
+PostNewtonianData /:
+ MakeBoxes[pnd:PostNewtonianData[data_Association], form:(StandardForm|TraditionalForm)] :=
+ Module[{summary, extended, den, startOrder, maxOrder},
   den = data["Series"][[6]];
   startOrder = data["Series"][[4]]/den;
   maxOrder = (data["Series"][[5]]-1)/den;
@@ -64,17 +64,24 @@ Format[p:PostNewtonianData[data_Association]] :=
   If[!IntegerQ[startOrder], startOrder = N[startOrder]];
   If[!IntegerQ[maxOrder], maxOrder = N[maxOrder]];
 
-  With[{name = name, startOrder = startOrder, maxOrder = maxOrder}, DisplayForm[
-    InterpretationBox[RowBox[{TagBox["PostNewtonianData", "SummaryHead"], "[", TemplateBox[{
-    GridBox[
-      {{RowBox[{TagBox["\"Name: \"", "SummaryItemAnnotation"], "\[InvisibleSpace]", TagBox[name, "SummaryItem"]}]},
-       {RowBox[{RowBox[{TagBox["\"Starting order: \"", "SummaryItemAnnotation"], "\[InvisibleSpace]", TagBox[startOrder, "SummaryItem"]}], "\t",
-                RowBox[{TagBox["\"Maximum order: \"", "SummaryItemAnnotation"], "\[InvisibleSpace]", TagBox[maxOrder, "SummaryItem"]}]}]}}, 
-      GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-      GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-      BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]
-    }, "SummaryPanel"], "]"}], p, Editable -> False, SelectWithContents -> True, Selectable -> False]]]
+  summary = {Row[{BoxForm`SummaryItem[{"Name: ", data["Name"]}], "  ",
+                  BoxForm`SummaryItem[{"Starting order: ", startOrder}], "  ",
+                  BoxForm`SummaryItem[{"Maximum order: ", maxOrder}]}],
+             BoxForm`SummaryItem[{"Domain: ", assoc["Domain"]}],
+             BoxForm`SummaryItem[{"Boundary Conditions: " , assoc["BoundaryConditions"]}]};
+  extended = {BoxForm`SummaryItem[{"Eigenvalue: ", assoc["Eigenvalue"]}],
+              BoxForm`SummaryItem[{"Transmission Amplitude: ", assoc["Amplitudes", "Transmission"]}],
+              BoxForm`SummaryItem[{"Incidence Amplitude: ", Lookup[assoc["Amplitudes"], "Incidence", Missing]}],
+              BoxForm`SummaryItem[{"Reflection Amplitude: ", Lookup[assoc["Amplitudes"], "Reflection", Missing]}],
+              BoxForm`SummaryItem[{"Method: ", First[assoc["Method"]]}],
+              BoxForm`SummaryItem[{"Method options: ",Column[Rest[assoc["Method"]]]}]};
+  BoxForm`ArrangeSummaryBox[
+    PostNewtonianData,
+    pnd,
+    None,
+    summary,
+    extended,
+    form]
 ];
 
 (**********************************************************)

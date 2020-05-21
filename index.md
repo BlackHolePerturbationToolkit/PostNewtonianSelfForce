@@ -1,7 +1,7 @@
 {% include head.html %}
 
 <p>
- <h1 style="display:inline">PostNewtonianSelfForce</h1> <span style="float:right;"><a href="{{ site.github.repository_url }}" class = "code_btn">Get the code!</a></span>
+ <h1 style="display:inline">PostNewtonianSelfForce</h1> <span style="float:right;"><a href="https://bhptoolkit.org/mathematica-install.html" class = "code_btn">Install this package!</a></span>
 </p>
 
 The PostNewtonianSelfForce package provides a set of functions for working with

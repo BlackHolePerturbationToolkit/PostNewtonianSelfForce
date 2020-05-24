@@ -64,17 +64,9 @@ PostNewtonianData /:
   If[!IntegerQ[startOrder], startOrder = N[startOrder]];
   If[!IntegerQ[maxOrder], maxOrder = N[maxOrder]];
 
-  summary = {Row[{BoxForm`SummaryItem[{"Name: ", data["Name"]}], "  ",
-                  BoxForm`SummaryItem[{"Starting order: ", startOrder}], "  ",
-                  BoxForm`SummaryItem[{"Maximum order: ", maxOrder}]}],
-             BoxForm`SummaryItem[{"Domain: ", assoc["Domain"]}],
-             BoxForm`SummaryItem[{"Boundary Conditions: " , assoc["BoundaryConditions"]}]};
-  extended = {BoxForm`SummaryItem[{"Eigenvalue: ", assoc["Eigenvalue"]}],
-              BoxForm`SummaryItem[{"Transmission Amplitude: ", assoc["Amplitudes", "Transmission"]}],
-              BoxForm`SummaryItem[{"Incidence Amplitude: ", Lookup[assoc["Amplitudes"], "Incidence", Missing]}],
-              BoxForm`SummaryItem[{"Reflection Amplitude: ", Lookup[assoc["Amplitudes"], "Reflection", Missing]}],
-              BoxForm`SummaryItem[{"Method: ", First[assoc["Method"]]}],
-              BoxForm`SummaryItem[{"Method options: ",Column[Rest[assoc["Method"]]]}]};
+  summary = {BoxForm`SummaryItem[{"Name: ", data["Name"]}]};
+  extended = {BoxForm`SummaryItem[{"Starting order: ", startOrder}],
+              BoxForm`SummaryItem[{"Maximum order: ", maxOrder}]};
   BoxForm`ArrangeSummaryBox[
     PostNewtonianData,
     pnd,

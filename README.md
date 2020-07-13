@@ -66,7 +66,8 @@ be found in the LICENSE file.
 
 Barry Wardell  
 Niels Warburton
+Priti Gupta
 
 PN-SF series contributed by:
 
-Donato Bini, Thibault Damour, Ryuichi Fujita, Seth Hopper, Chris Kavanagh, Adrian Ottewill, Abhay Shah, Barry Wardell
+Donato Bini, Thibault Damour, Ryuichi Fujita, Seth Hopper, Chris Kavanagh, Adrian Ottewill, Abhay Shah, Norichika Sago, Barry Wardell

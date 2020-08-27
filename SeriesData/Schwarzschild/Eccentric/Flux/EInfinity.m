@@ -37,7 +37,7 @@ Log[y]^3  (1/(1-e^2)^(25/2)) (-(10035552256/17364375)-(3379433020832 e^2)/520931
 "Name"->"Schwarzschild Eccentric Orbit Energy Flux",
 "Description"->"Post-Newtonian expansion for the energy flux for a particle on an eccentric orbit about a Schwarzschild black hole to first order in the mass ratio.",
 "Authors"->{"Christopher Munna, Charles R. Evans, Seth Hopper, Erik Forseth"},
-"References"->{"TBD"},
+"References"->{"Determination of new coefficients in the angular momentum and energy fluxes at infinity to 9PN for eccentric Schwarzschild extreme-mass-ratio inspirals using mode-by-mode fitting, Phys. Rev. D 102, 024047 (2020), arXiv:2005.03044."},
 "ExtraFunctions"->{g[n_,e_,highestPower_]:= n^2/2 ((-4/e^3-3e+7/e)*BesselJ[n,n*e]*D[BesselJ[n,n*e],e]+((e^2+e^-2-2)*n^2+e^-2-1)*(1/n^2)*D[BesselJ[n,n*e],e]^2+(e^-4-e^-2+(e^-4-e^2-3/e^2+3)*n^2+1/3)*BesselJ[n,n*e]^2),
 chi3PN[et_,highestPower_]:= (-((3 Log[1-e^2])/(2 (1-e^2)^(13/2))) (1+(85 e^2)/6+(5171 e^4)/192+(1751 e^6)/192+(297 e^8)/1024)+ResummedSeriesData[1/(1-e^2)^(13/2), ExpandAll[Collect[Series[(3 Log[1-e^2])/2 (1+(85 e^2)/6+(5171 e^4)/192+(1751 e^6)/192+(297 e^8)/1024)+Sum[(1-e^2)^(13/2) (n^2/4)*(PowerExpand[Log[n]]-Log[2])*g[n,e,highestPower],{n,1,Ceiling[highestPower/2]+3}],{e,0,highestPower}],e,Expand]+O[e]^(highestPower+1)]])/.e->et,
 oneP5PN[et_,highestPower_]:= ResummedSeriesData[1/(1-e^2)^5 ,Sum[Series[(32/5) 4 Pi (1-e^2)^5 (n/2)*g[n,e,highestPower],{e,0,highestPower}]/.e->et,{n,1,Ceiling[highestPower/2]+3}]],

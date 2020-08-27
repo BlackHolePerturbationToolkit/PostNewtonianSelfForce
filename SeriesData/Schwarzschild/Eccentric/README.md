@@ -7,13 +7,17 @@ This repository contains the most up to date PN series expansions for eccentric 
 | PN order  | Authors                                                                | Reference                                                                           |
 |-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | 7PN, varying orders in e^2  | E. Forseth, C. R. Evans, S. Hopper                 | Phys. Rev. D 93:064058 (2016), [arXiv:1512.03051](https://arxiv.org/abs/1512.03051v1) |
-| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans                                 | [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) (2019) |
+| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans                                 | Phys. Rev. D 100, 104060 (2019), [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) (2019) |
+| 9PN, varying orders in e^2 | C. Munna, C. R. Evans, S. Hopper, E. Forseth 
+| Phys. Rev. D 102:024047 (2020), [arXiv:2005.03044](https://arxiv.org/abs/2005.03044) (2020) |
 
 ### Angular Momentum flux at Infinity
 
 | PN order  | Authors                                                                | Reference                                                                           |
 |-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans                                 | [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) (2019) |
+| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans                                 | Phys. Rev. D 100, 104060 (2019), [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) (2019) |
+| 9PN, varying orders in e^2 | C. Munna, C. R. Evans, S. Hopper, E. Forseth 
+| Phys. Rev. D 102:024047 (2020), [arXiv:2005.03044](https://arxiv.org/abs/2005.03044) (2020) |
 
 ### Redshift invariant
 

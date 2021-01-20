@@ -63,3 +63,9 @@ It is important to note that this reference is only for the most recent paper co
 ## Further examples
 
 Example notebooks can be found in the [Mathematica Toolkit Examples repository](https://github.com/BlackHolePerturbationToolkit/MathematicaToolkitExamples).
+
+## Authors and contributors
+
+Package: Barry Wardell, Niels Warburton, Priti Gupta
+
+PN series: Donato Bini, Thibault Damour, Charles Evans, Ryuichi Fujita, Seth Hopper, Chris Kavanagh, Chris Munna, Adrian Ottewill, Abhay Shah, Norichika Sago, Barry Wardell

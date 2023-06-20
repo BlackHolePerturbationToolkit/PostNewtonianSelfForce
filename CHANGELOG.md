@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fixed sign error in the 3PN eccentric Schwarzschild angular momentum flux
 
 ## [0.3.0] - 2020-09-15
 

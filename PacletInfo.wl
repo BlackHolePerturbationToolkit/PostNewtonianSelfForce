@@ -1,6 +1,8 @@
+(* ::Package:: *)
+
 Paclet[
   "Name" -> "PostNewtonianSelfForce",
-  "Version" -> "0.3.0",
+  "Version" -> "0.4.0",
   "MathematicaVersion" -> "10.2+",
   "Creator" -> "Black Hole Perturbation Toolkit",
   "Description" -> "Post-Newtonian Expansion in the Self-force Regime",

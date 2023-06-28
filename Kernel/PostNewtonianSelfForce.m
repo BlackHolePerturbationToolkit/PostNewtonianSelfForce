@@ -54,6 +54,8 @@ PostNewtonianData[data_Association][quantity_String] :=
   data[quantity]
 ]
 
+Keys[g_PostNewtonianData]^:=Keys[g[[1]]]
+
 PostNewtonianData /:
  MakeBoxes[pnd:PostNewtonianData[data_Association], form:(StandardForm|TraditionalForm)] :=
  Module[{summary, extended, den, startOrder, maxOrder},

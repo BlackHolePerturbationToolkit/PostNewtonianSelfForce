@@ -23,6 +23,7 @@ Paclet[
       {
         "Guides/PostNewtonianSelfForce"
       }
-    }
+    },
+    {"Asset", "Root" -> "SeriesData", "Assets" -> {{"Kerr", "Kerr"}, {"Schwarzschild", "Schwarzschild"}}}
   }
 ]

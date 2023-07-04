@@ -46,8 +46,16 @@ The entire PN series can be extracted using the command
 
 In this case the series is very large. If instead you just want a particular coefficient use `PostNewtonianCoefficient[PNSeries, n]` where n is the power of $y$ whose coefficient you're interested in.
 
+## Citing
 
-## Referencing
+### Package
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8112959.svg)](https://doi.org/10.5281/zenodo.8112959)
+
+In addition to acknowledging the Black Hole Perturbation Toolkit as suggested on the [front page](https://bhptoolkit.org) we also recommend citing the specific package version you use via the citation information on the package’s Zenodo page linked from the above DOI.
+
+
+### Post-Newtonian Series
 
 If you make use of any PN series in your work you can find the correct reference by calling `PNSeries["References"]`. In this case this returns
 

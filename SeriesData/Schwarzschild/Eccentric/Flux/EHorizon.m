@@ -129,5 +129,5 @@ ResummedSeriesData[(1 - e^2)^Rational[-51, 2], SeriesData[e, 0, {Rational[270526
 "Name"->"Schwarzschild Eccentric Orbit Energy Flux at the Horizon",
 "Description"->"Post-Newtonian expansion for the energy absorption by the primary due to a particle on an eccentric orbit about a Schwarzschild black hole to first order in the mass ratio.",
 "Authors"->{"Christopher Munna, Charles R. Evans, Erik Forseth"},
-"References"->{"Determination of new coefficients in the angular momentum and energy fluxes at infinity to 9PN for eccentric Schwarzschild extreme-mass-ratio inspirals using mode-by-mode fitting, Phys. Rev. D 102, 024047 (2020), arXiv:2005.03044."},
+"References"->{"Tidal heating and torquing of the primary black hole in eccentric-orbit, non-spinning extreme-mass-ratio inspirals to 22PN order, arXiv:2306.12481."},
 "Series"->dEdt|>]

@@ -84,8 +84,8 @@ PostNewtonianData /:
 (* Convenience function for extracting individual PN terms from the series *)
 
 PostNewtonianCoefficient[PNSeries_, n_] := SeriesCoefficient[PNSeries["Series"], n]
-PostNewtonianCoefficient[PNSeries_, n_, 0] := SeriesCoefficient[PNSeries["Series"], n]/.{Log[PNSeries["Series"][[1]]]^n->0,Log[PNSeries["Series"][[1]]]->0}
-PostNewtonianCoefficient[PNSeries_, n_, nL_] := Coefficient[SeriesCoefficient[PNSeries["Series"], n], Log[PNSeries["Series"][[1]]]^nL]
+PostNewtonianCoefficient[PNSeries_, n_, 0] := SeriesCoefficient[PNSeries["Series"], n]/.{Symbol["Log"<>ToString[PNSeries["Series"][[1]]]]^n->0,Symbol["Log"<>ToString[PNSeries["Series"][[1]]]]->0}
+PostNewtonianCoefficient[PNSeries_, n_, nL_] := Coefficient[SeriesCoefficient[PNSeries["Series"], n], Symbol["Log"<>ToString[PNSeries["Series"][[1]]]]^nL]
 
 End[];
 

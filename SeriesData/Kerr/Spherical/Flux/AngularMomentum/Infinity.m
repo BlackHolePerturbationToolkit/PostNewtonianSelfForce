@@ -1793,7 +1793,7 @@ Module[{KerrInfinity},
     "References" -> {"Post-Newtonian expansion of energy and angular momentum fluxes: inclined spherical orbits about a Kerr black hole, arXiv:2411.09700"},
     "ExtraFunctions"->{
       RePsi[m_,n_] :> (PolyGamma[m, 1 + (I  a  n)/Sqrt[1-a^2]] + PolyGamma[m, 1 - (I  a  n)/Sqrt[1-a^2]]),
-      ImPsi[m_,n_] :> (PolyGamma[m, 1 + (I  a  n)/Sqrt[1-a^2]] + PolyGamma[m, 1 - (I  a  n)/Sqrt[1-a^2]])/I,
+      ImPsi[m_,n_] :> (PolyGamma[m, 1 + (I  a  n)/Sqrt[1-a^2]] - PolyGamma[m, 1 - (I  a  n)/Sqrt[1-a^2]])/I},
     "Series" -> KerrInfinity
   |>
 ]

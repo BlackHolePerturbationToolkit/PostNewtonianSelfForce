@@ -23,6 +23,7 @@ This repository contains the most up to date PN series expansions for eccentric 
 |-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | 3PN, e^6  | S. Akcay, A. Le Tiec, L. Barack, N. Sago, N. Warburton                 | Phys. Rev. D 91:124014 (2015), [arXiv:1503.01374](https://arxiv.org/abs/1503.01374) |
 | 4PN, e^10 | S. Hopper, C. Kavanagh, A. C. Ottewill                                 | Phys. Rev. D 93:044010 (2016), [arXiv:1512.01556](https://arxiv.org/abs/1512.01556) |
+| 10PN, e^20 | C. Munna, C. R. Evans                                                 | Phys. Rev. D 106:044004 (2022), [arXiv:2203.13832](https://arxiv.org/abs/2203.13832) |
 
 ### Spin precession invariant
 

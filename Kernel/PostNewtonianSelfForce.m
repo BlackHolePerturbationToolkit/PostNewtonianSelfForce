@@ -38,8 +38,8 @@ PostNewtonianExpansion[quantity:(_String|{__String})] :=
 SelectFromPNSeriesList[SeriesList_,string_String]:=Block[{},
   If[string=="",Return[SeriesList]];
   If[StringTake[string,1]=="!",
-    Select[SeriesList,Not[StringContainsQ[#,StringTake[string,2;;]]]&],
-    Select[SeriesList,StringContainsQ[#,string]&]
+    Select[SeriesList,Not[StringContainsQ[#,StringTake[string,2;;],IgnoreCase->True]]&],
+    Select[SeriesList,StringContainsQ[#,string,IgnoreCase->True]&]
   ]
 ]
 

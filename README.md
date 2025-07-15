@@ -1,6 +1,6 @@
 # PostNewtonianSelfForce
 
-Copyright (c) 2018-20 Black Hole Perturbation Toolkit
+Copyright (c) 2018-25 Black Hole Perturbation Toolkit
 
 The PostNewtonianSelfForce package provides a set of functions for working with
 post-Newtonian expansions in the self-force regime. The results are categorized

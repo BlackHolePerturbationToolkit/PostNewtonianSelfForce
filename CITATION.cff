@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: PostNewtonianSelfForce
+message: >-
+  If you use this software, please cite its Zenodo record
+  and include the acknowledgment "This work makes use of
+  the Black Hole Perturbation Toolkit." in any papers.
+type: software
+authors:
+  - given-names: Barry
+    family-names: Wardell
+    email: barry.wardell@gmail.com
+    affiliation: University College Dublin
+    orcid: 'https://orcid.org/0000-0001-6176-9006'
+  - given-names: Niels
+    family-names: Warburton
+    email: niels.warburton@ucd.ie
+    affiliation: University College Dublin
+    orcid: 'https://orcid.org/0000-0003-0914-8645'
+  - given-names: Chris
+    family-names: Kavanagh
+    email: chris.kavanagh1@ucd.ie
+    affiliation: University College Dublin
+    orcid: 'https://orcid.org/0000-0002-2874-9780'
+  - given-names: Christopher
+    family-names: Munna
+    email: cmm0052@live.unc.edu
+    affiliation: University of North Carolina at Chapel Hill
+    orcid: 'https://orcid.org/0000-0002-1682-4114'
+  - given-names: Charles R.
+    family-names: Evans
+    email: evans@physics.unc.edu
+    affiliation: University of North Carolina at Chapel Hill
+    orcid: 'https://orcid.org/0000-0001-5578-1033'
+  - given-names: David
+    family-names: Trestini
+    orcid: 'https://orcid.org/0000-0002-4140-0591'
+    email: david.trestini@soton.ac.uk
+    affiliation: University of Southampton
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.8112959
+    description: Latest release on Zenodo
+repository-code: 'https://github.com/BlackHolePerturbationToolkit/PostNewtonianSelfForce'
+date-released: 2025-07-16
+abstract: >-
+  The PostNewtonianSelfForce package provides a set of functions
+  for working with post-Newtonian expansions in the self-force regime.
+license: MIT
+version: 0.6.0

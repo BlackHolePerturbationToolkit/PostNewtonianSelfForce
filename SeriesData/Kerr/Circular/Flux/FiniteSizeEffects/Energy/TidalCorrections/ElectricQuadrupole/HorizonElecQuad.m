@@ -256,9 +256,9 @@ Module[{KerrHorizon},
     (175*(-1 + a^2)) + (1314816*(a + 3*a^3)*Zeta[3])/175}, 25, 38, 2];
    <|
     "Name" -> "Kerr Circular Orbit Horizon Flux - electric tidal quadrupole coefficient",
-    "Description" -> "Post-Newtonian expansion for the radiated flux to infinity for a particle on a circular orbit about a Kerr black hole to the linear order in the mass-ratio.",
+    "Description" -> "Post-Newtonian expansion for the radiated flux through the horizon due to the electric (mass-type) tidally induced quadrupole moment of a particle on a circular orbit about a Kerr black hole. Corresponds to \!\(\*SuperscriptBox[SubscriptBox[\(\[ScriptCapitalF]\), \(2 | \[Mu]2\)], \(H\)]\) in the reference.",
     "Authors" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews"},
-    "References" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews, arXiv:XXXX.XXXX."},
+    "References" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews, arXiv:2606.28937"},
     "Series" -> KerrHorizon
   |>
 ]

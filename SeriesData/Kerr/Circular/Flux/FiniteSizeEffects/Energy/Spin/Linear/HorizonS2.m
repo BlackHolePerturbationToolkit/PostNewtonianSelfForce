@@ -347,9 +347,9 @@ Module[{KerrHorizon},
    (6848*a*(4 + 13*a^2)*Zeta[3])/35}, 18, 31, 2];
    <|
     "Name" -> "Kerr Circular Orbit Horizon Flux - linear secondary spin coefficient",
-    "Description" -> "Post-Newtonian expansion for the radiated flux to infinity for a particle on a circular orbit about a Kerr black hole to the linear order in the mass-ratio.",
+    "Description" -> "Post-Newtonian expansion for the radiated flux through the horizon for a spinning particle on a circular orbit about a Kerr black hole. Corresponds to \!\(\*SuperscriptBox[SubscriptBox[\(\[ScriptCapitalF]\), \(1 | \[Chi]\)], \(H\)]\) in the reference.",
     "Authors" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews"},
-    "References" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews, arXiv:XXXX.XXXX."},
+    "References" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews, arXiv:2606.28937"},
     "Series" -> KerrHorizon
   |>
 ]

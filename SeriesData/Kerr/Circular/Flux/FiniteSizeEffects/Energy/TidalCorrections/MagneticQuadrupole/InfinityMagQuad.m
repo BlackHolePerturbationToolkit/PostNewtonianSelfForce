@@ -64,9 +64,9 @@ Module[{KerrInfinity},
     93922438165068344832000*Zeta[3])/752984250055537500}, 22, 35, 2];
    <|
     "Name" -> "Kerr Circular Orbit Infinity Flux - magnetic tidal quadrupole coefficient",
-    "Description" -> "Post-Newtonian expansion for the radiated flux to infinity for a particle on a circular orbit about a Kerr black hole to the linear order in the mass-ratio.",
+    "Description" -> "Post-Newtonian expansion for the radiated flux to infinity due to the magnetic (current-type) tidally induced quadrupole moment of a particle on a circular orbit about a Kerr black hole. Corresponds to \!\(\*SuperscriptBox[SubscriptBox[\(\[ScriptCapitalF]\), \(2 | \[Sigma]2\)], \(\[Infinity]\)]\) in the reference.",
     "Authors" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews"},
-    "References" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews, arXiv:XXXX.XXXX."},
+    "References" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews, arXiv:2606.28937"},
     "Series" -> KerrInfinity
   |>
 ]

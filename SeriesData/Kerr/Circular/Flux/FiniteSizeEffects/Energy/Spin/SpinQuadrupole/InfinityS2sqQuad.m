@@ -44,9 +44,9 @@ Module[{KerrInfinity},
    12047748000888600000}, 14, 27, 2];
    <|
     "Name" -> "Kerr Circular Orbit Infinity Flux - spin induced quadrupole - quadratic secondary spin coefficient",
-    "Description" -> "Post-Newtonian expansion for the radiated flux to infinity for a particle on a circular orbit about a Kerr black hole to the linear order in the mass-ratio.",
+    "Description" -> "Post-Newtonian expansion for the radiated flux to infinity for a particle with a spin-induced quadrupole moment on a circular orbit about a Kerr black hole. Corresponds to \!\(\*SuperscriptBox[SubscriptBox[\(\[ScriptCapitalF]\), \(2 | CQ\)], \(\[Infinity]\)]\) in the reference.",
     "Authors" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews"},
-    "References" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews, arXiv:XXXX.XXXX."},
+    "References" -> {"Mostafizur Rahman, Misbah Shahzadi, Adam Pound and Josh Mathews, arXiv:2606.28937"},
     "Series" -> KerrInfinity
   |>
 ]

@@ -36,6 +36,11 @@ authors:
     orcid: 'https://orcid.org/0000-0002-4140-0591'
     email: david.trestini@soton.ac.uk
     affiliation: University of Southampton
+  - given-names: Josh
+    family-names: Mathews
+    orcid: 'https://orcid.org/0000-0002-5477-8470'
+    email: josh.mat@nus.edu.sg
+    affiliation: National University of Singapore
 identifiers:
   - type: doi
     value: 10.5281/zenodo.8112959

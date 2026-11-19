@@ -4,30 +4,45 @@ This repository contains the most up to date PN series expansions for eccentric 
 
 ### Energy flux at Infinity
 
-| PN order  | Authors                                                                | Reference                                                                           |
-|-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| 7PN, varying orders in e^2  | E. Forseth, C. R. Evans, S. Hopper                 | Phys. Rev. D 93:064058 (2016), [arXiv:1512.03051](https://arxiv.org/abs/1512.03051v1) |
-| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans                                 | Phys. Rev. D 100, 104060 (2019), [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) |
-| 9PN, varying orders in e^2 | C. Munna, C. R. Evans, S. Hopper, E. Forseth | Phys. Rev. D 102:024047 (2020), [arXiv:2005.03044](https://arxiv.org/abs/2005.03044) |
+| PN order  | Authors                                                                | Reference                                                                             |
+|-----------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| 7PN, varying orders in e^2  | E. Forseth, C. R. Evans, S. Hopper                   | Phys. Rev. D 93:064058 (2016), [arXiv:1512.03051](https://arxiv.org/abs/1512.03051v1) |
+| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans             | Phys. Rev. D 100:104060 (2019), [arXiv:1909.05877](https://arxiv.org/abs/1909.05877)  |
+| 9PN, varying orders in e^2  | C. Munna, C. R. Evans, S. Hopper, E. Forseth         | Phys. Rev. D 102:024047 (2020), [arXiv:2005.03044](https://arxiv.org/abs/2005.03044)  |
+| 19PN, varying orders in e^2 | C. Munna                                             | Phys. Rev. D 102:124001 (2020), [arXiv:2008.10622](https://arxiv.org/abs/2008.10622)  |
+| Leading and subleading logs - 1PN corrections| C. Munna, C. R. Evans               | Phsy. Rev. D 102:104006 (2020), [arXiv:2009.01254](https://arxiv.org/abs/2009.01254)  |   
 
 ### Angular Momentum flux at Infinity
 
-| PN order  | Authors                                                                | Reference                                                                           |
-|-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans                                 | Phys. Rev. D 100, 104060 (2019), [arXiv:1909.05877](https://arxiv.org/abs/1909.05877) |
-| 9PN, varying orders in e^2 | C. Munna, C. R. Evans, S. Hopper, E. Forseth | Phys. Rev. D 102:024047 (2020), [arXiv:2005.03044](https://arxiv.org/abs/2005.03044) |
+| PN order  | Authors                                                                | Reference                                                                             |
+|-----------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| Leading logs + 6PN Log, arbitrary order in e^2 | C. Munna, C. R. Evans             | Phys. Rev. D 100:104060 (2019), [arXiv:1909.05877](https://arxiv.org/abs/1909.05877)  |
+| 9PN, varying orders in e^2 | C. Munna, C. R. Evans, S. Hopper, E. Forseth          | Phys. Rev. D 102:024047 (2020), [arXiv:2005.03044](https://arxiv.org/abs/2005.03044)  |
+| 19PN, varying orders in e^2 | C. Munna                                             | Phys. Rev. D 102:124001 (2020), [arXiv:2008.10622](https://arxiv.org/abs/2008.10622)  |
+| Leading and subleading logs - 1PN corrections| C. Munna, C. R. Evans               | Phsy. Rev. D 102:104006 (2020), [arXiv:2009.01254](https://arxiv.org/abs/2009.01254)  |   
+
+### Energy flux at the Horizon
+| PN order                    | Authors                                               | Reference                                                                             |
+|-----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------|
+| 22PN, varying orders in e^2 | C. Munna                                              | Phys. Rev. D 108:044039 (2023), [arXiv:2306.12481](https://arxiv.org/abs/2306.12481)  |                                
+
+### Angular Momentum flux at the Horizon
+| PN order                    | Authors                                               | Reference                                                                             |
+|-----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------|
+| 22PN, varying orders in e^2 | C. Munna                                              | Phys. Rev. D 108:044039 (2023), [arXiv:2306.12481](https://arxiv.org/abs/2306.12481)  |                                
 
 ### Redshift invariant
 
-| PN order  | Authors                                                                | Reference                                                                           |
-|-----------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| 3PN, e^6  | S. Akcay, A. Le Tiec, L. Barack, N. Sago, N. Warburton                 | Phys. Rev. D 91:124014 (2015), [arXiv:1503.01374](https://arxiv.org/abs/1503.01374) |
-| 4PN, e^10 | S. Hopper, C. Kavanagh, A. C. Ottewill                                 | Phys. Rev. D 93:044010 (2016), [arXiv:1512.01556](https://arxiv.org/abs/1512.01556) |
+| PN order   | Authors                                                                | Reference                                                                           |
+|------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| 3PN, e^6   | S. Akcay, A. Le Tiec, L. Barack, N. Sago, N. Warburton                 | Phys. Rev. D 91:124014 (2015), [arXiv:1503.01374](https://arxiv.org/abs/1503.01374) |
+| 4PN, e^10  | S. Hopper, C. Kavanagh, A. C. Ottewill                                 | Phys. Rev. D 93:044010 (2016), [arXiv:1512.01556](https://arxiv.org/abs/1512.01556) |
 | 10PN, e^20 | C. Munna, C. R. Evans                                                 | Phys. Rev. D 106:044004 (2022), [arXiv:2203.13832](https://arxiv.org/abs/2203.13832) |
 
 ### Spin precession invariant
 
-| PN order | Authors                                                                | Reference                                                                                    |
-|----------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| 2PN, e^2 | S. Akcay, D. Dempsey, S. R. Dolan                                      | Class. Quant. Grav. 34,8:084001 (2017), [arXiv:1608.04811](https://arxiv.org/abs/1608.04811) |
-| 5PN, e^2 | C. Kavanagh, D. Bini, T. Damour, S. Hopper, A. C. Ottewill, B. Wardell | Phys. Rev. D 96:064012 (2017), [arXiv:1706.00459](https://arxiv.org/abs/1706.00459)          |
+| PN order  | Authors                                                                | Reference                                                                                    |
+|-----------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| 2PN, e^2  | S. Akcay, D. Dempsey, S. R. Dolan                                      | Class. Quant. Grav. 34,8:084001 (2017), [arXiv:1608.04811](https://arxiv.org/abs/1608.04811) |
+| 5PN, e^2  | C. Kavanagh, D. Bini, T. Damour, S. Hopper, A. C. Ottewill, B. Wardell | Phys. Rev. D 96:064012 (2017), [arXiv:1706.00459](https://arxiv.org/abs/1706.00459)          |
+| 9PN, e^16 | C. Munna, C. R. Evans                                                     | Phys. Rev. D 106:044058 (2022), [arXiv:2206.04085](https://arxiv.org/abs/2206.04085)         |

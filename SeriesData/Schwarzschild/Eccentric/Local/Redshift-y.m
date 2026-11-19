@@ -34,7 +34,7 @@ ResummedSeriesData[1/(1-e^2)^(19/2),SeriesData[e, 0, {Rational[-2389467863446532
 "Name"->"Schwarzschild Eccentric Orbit Redshift Invariant",
 "Description"->"Post-Newtonian expansion for the redshift invariant to 10PN for a particle on an eccentric orbit about a Schwarzschild black hole at first order in the mass ratio.",
 "Authors"->{"Christopher Munna, Charles R. Evans"},
-"References"->{"High-order post-Newtonian expansion of the redshift invariant for eccentric-orbit non-spinning extreme-mass-ratio inspirals, arXiv:2203.13832."},
+"References"->{"High-order post-Newtonian expansion of the redshift invariant for eccentric-orbit non-spinning extreme-mass-ratio inspirals, Phys. Rev. D 106, 044004 (2022), arXiv:2203.13832."},
 "Other references"->{"Hopper, Kavanagh and Ottewill, Phys. Rev. D 93, 044010, arXiv:1512.01556"},
 "ExtraFunctions"->{g[n_,e_,highestPower_]:= n^2/2 ((-4/e^3-3e+7/e)*BesselJ[n,n*e]*D[BesselJ[n,n*e],e]+((e^2+e^-2-2)*n^2+e^-2-1)*(1/n^2)*D[BesselJ[n,n*e],e]^2+(e^-4-e^-2+(e^-4-e^2-3/e^2+3)*n^2+1/3)*BesselJ[n,n*e]^2),
 chi4PNConv[et_,highestPower_]:=ExpandAll[Series[3/2 Log[1-e^2] (1+(73 e^2)/24+(37 e^4)/96)+Sum[(1-e^2)^(7/2)*(PowerExpand[Log[n]]-Log[2])*g[n,e,highestPower],{n,1,Ceiling[highestPower/2]+3}],{e,0,highestPower}]]/.{e->et},

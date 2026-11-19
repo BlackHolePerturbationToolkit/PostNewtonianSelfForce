@@ -17,7 +17,7 @@ SeriesData[e, 0, {Rational[1311867260284968501440736791, 20734275551109120000] +
     "Name" -> "Schwarzschild Eccentric Orbit Spin Invariant",
     "Description" -> "Post-Newtonian expansion for the spin invariant for a particle on an eccentric orbit about a Schwarzschild black hole to the linear order in the mass-ratio.",
     "Authors" -> {"Christopher Munna, Charles R. Evans"},
-    "References" -> {"Post-Newtonian expansion of the spin-precession invariant for eccentric-orbit non-spinning extreme-mass-ratio inspirals to 9PN and e^16, arXiv:2206.04085"},
+    "References" -> {"Post-Newtonian expansion of the spin-precession invariant for eccentric-orbit non-spinning extreme-mass-ratio inspirals to 9PN and e^16, Phys. Rev. D 106, 044058 (2022), arXiv:2206.04085"},
     "Other References" -> {"Kavanagh, Bini, Damour, Hopper, Ottewill, and Wardell, Phys. Rev. D 96, 064012, arXiv:1706.00459"},
     "Series" -> Delta\[Psi]
   |>

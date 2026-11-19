@@ -143,8 +143,9 @@ ResummedSeriesData[1/(1-e^2)^(21),SeriesData[e,0,{120237613558397149854910822363
 <|
 "Name"->"Schwarzschild Eccentric Orbit Angular Momentum Flux",
 "Description"->"Post-Newtonian expansion for the angular momentum flux for a particle on an eccentric orbit about a Schwarzschild black hole to first order in the mass ratio.",
-"Authors"->{"Christopher Munna, Charles R. Evans, Seth Hopper, Erik Forseth"},
-"References"->{"Determination of new coefficients in the angular momentum and energy fluxes at infinity to 9PN for eccentric Schwarzschild extreme-mass-ratio inspirals using mode-by-mode fitting, Phys. Rev. D 102, 024047 (2020), arXiv:2005.03044."},
+"Authors"->{"Christopher Munna"},
+"References"->{"Analytic post-Newtonian expansion of the energy and angular momentum radiated to infinity by eccentric-orbit non-spinning extreme-mass-ratio inspirals to 19PN, Phys. Rev. D 102, 124001 (2020), arXiv:2008.10622."},
+"Other References"->{"Munna, Evans, Hopper, and Forseth, Phys. Rev. D 102, 024047 (2020), arXiv:2005.03044"},
 "ExtraFunctions"->{gTild[n_,e_,highestPower_]:=Sqrt[1-e^2] n (e BesselJ[-1+n,e n]+(-1+(-1+e^2) n) BesselJ[n,e n]) (2 e (-1+e^2) n BesselJ[-1+n,e n]-(-2+e^2+2 (-1+e^2) n) BesselJ[n,e n])/e^4,
 chiTild3PN[et_,highestPower_]:=(-((3 Log[1-e^2])/(2 (1-e^2)^(5))) (1+(229 e^2)/32+(327 e^4)/64+(69 e^6)/256)+ResummedSeriesData[1/(1-e^2)^(5), ExpandAll[Collect[Series[(3 Log[1-e^2])/2 (1+(229 e^2)/32+(327 e^4)/64+(69 e^6)/256)+Sum[(1-e^2)^(5) (n^2/4)*(PowerExpand[Log[n]]-Log[2])*gTild[n,e,highestPower],{n,1,Ceiling[highestPower/2]+3}],{e,0,highestPower}],e,Expand]+O[e]^(highestPower+1)]])/.e->et,
 oneP5PNTild[et_,highestPower_]:=ResummedSeriesData[1/(1-e^2)^(7/2),Sum[Series[(32/5) 4 Pi (1-e^2)^(7/2) (n/2)*gTild[n,e,highestPower],{e,0,highestPower}]/.e->et,{n,1,Ceiling[highestPower/2]+3}]],

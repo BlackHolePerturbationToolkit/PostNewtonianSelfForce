@@ -4,6 +4,18 @@ This repository contains the most up to date PN series expansions for spherical 
 
 ## Point particle results
 
+## Fluxes 
+
+## Energy Flux at Infinity
+| PN order 	         | Authors                                                     | Reference                                                                                          |
+|--------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| 10PN-e^20          | J. Castillo, C. Munna, Z. Nasipak, J. D. Brown, C. R. Evans |
+
+## Angular Momentum Flux at Infinity
+| PN order 	         | Authors                                                     | Reference                                                                                          |
+|--------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| 10PN-e^20          | J. Castillo, C. Munna, Z. Nasipak, J. D. Brown, C. R. Evans |
+
 ## Redshift
 | PN order 	         | Authors                                              | Reference                                                                                          |
 |--------------------|------------------------------------------------------|----------------------------------------------------------------------------------------------------|

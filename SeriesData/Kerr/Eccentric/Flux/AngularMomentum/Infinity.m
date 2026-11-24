@@ -6,7 +6,7 @@ KerrInfinity=SeriesData[p, Infinity, {(32*(1 - e^2)^(3/2)*(1 + (7*e^2)/8))/5, 0,
 "Description"->"Post-Newtonian expansion for the angular momentum flux at infinity to 10PN for a particle on an eccentric, equatorial orbit about a Kerr black hole to first order in the mass ratio",
 "Authors"->{"Jezreel C. Castillo", "Christopher Munna", "Zachary Nasipak", "J. David Brown", "Charles R. Evans"
 },
-"References"->{"Post-Newtonian expansion of the energy and angular momentum flux radiated to infinity: Eccentric-equatorial orbits about a Kerr black hole, arXiv:2611."},
+"References"->{"Post-Newtonian expansion of the energy and angular momentum flux radiated to infinity: Eccentric-equatorial orbits about a Kerr black hole, arXiv:2611.30437."},
 "ExtraFunctions"->{
 RePsi[n_,m_,a_]:>(PolyGamma[m, 1 + (I  a  n)/Sqrt[1-a^2]] + PolyGamma[m, 1 - (I  a  n)/Sqrt[1-a^2]]),
 ImPsi[n_,m_,a_]:>(PolyGamma[m, 1 + (I  a  n)/Sqrt[1-a^2]] - PolyGamma[m, 1 - (I  a  n)/Sqrt[1-a^2]])/I},
